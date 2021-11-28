@@ -3,14 +3,99 @@ sequencias.mlt
 == globals ==
 aula = Espaços métricos
 
-== 06.000 ==
+== 30.000 ==
 template = vinheta
 
-== 35.000 ==
+== 54.000 ==
 template = parte
 parte = Sequências
 
-== .000 ==
+== 01:09.000 ==
 template = topico
-texto_html = 
+texto_html = os espaços <emph>MÉTRICOS</emph>
+
+== 02:40.000 ==
+template = topico
+texto_html = $\forall \varepsilon > 0,\, \exists n \in \mathbb{N}^*$,<br>tal que $\displaystyle 0 < \frac{1}{n} < \varepsilon$
+
+== 02:52.000 ==
+template = topico
+texto_html = $\mathcal{V}(a) = \{V \subset X: \exists n \in \mathbb{N}^*,\, B_{1/n}(a) \subset V \}$
+
+== 03:21.000 ==
+template = topico
+texto_html = só essas <emph>VIZINHANÇAS MEONRES</emph>
+
+== 04:48.000 ==
+template = topico
+texto_html = B_1 \supset B_{1/2} \supset B_{1/3} \supset B_{1/4} \supset \bdots$
+
+== 08:08.000 ==
+template = topico
+texto_html = $\mathcal{V}(a)$ tem uma base enumerável
+
+== 10:43.000 ==
+template = topico
+texto_html = $a \in \mathrm{s-cl}(D)$ quando
+
+== 10:44.000 ==
+template = topico
+texto_html = existe $x_n \in D$, com $x_n \rightarrow a$
+javascript = overlap();
+
+== 12:37.000 ==
+template = topico
+texto_html = $s-cl(D) \subset \overline{D}$: sempre!
+
+== 12:38.000 ==
+template = topico
+texto_html = $\overline{D} \subset s-cl(D)$: NEM SEMPRE!
+javascript = overlay(); prepend_image('texto', 'smart_girl', 'flipped');
+
+== 13:22.000 ==
+template = parte
+parte = Continuidade com sequências
+
+== 14:33.000 ==
+template = topico
+texto_html = $f(x_n) \rightarrow f(a)$?
+
+== 15:07.000 ==
+template = topico
+texto_html = eventualmente, $x_n \in f^{-1}(V)$
+
+== 16:00.000 ==
+template = topico
+texto_html = continuidade $\Rightarrow$ continuidade sequencial: SEMPRE
+
+== 16:05.000 ==
+template = topico
+texto_html = continuidade sequencia $\Rightarrow$ continuidade: NEM SEMPRE
+javascript = prepend_image('texto', 'forbidden');
+
+== 16:07.000 ==
+template = topico
+texto_html = no caso dos espaços métricos... VALE
+javascript = overlap(); prepend_image('texto', 'math_girl');
+
+== 17:35.000 ==
+template = topico
+texto_html = é só tomar $x_n \in B_{1/n}(a)$
+
+== 19:16.000 ==
+template = topico
+texto_html = $B_{1/n} \setminus f^{-1}(V) \neq \emtpyset$
+
+== 19:13.000 ==
+template = topico
+texto_html = $x_n \in B_{1/n} \setminus f^{-1}(V) \neq \emtpyset$
+
+== 20:14.000 ==
+template = topico
+texto_html = $x_n \in B_{1/n}$ tal que $f(x_n) \not \in V$
+
+== 22:15.000 ==
+template = topico
+texto_html = um intervalo e depois só mais uma "coisinha" de nada
+javascript = prepend_image('texto', 'papito'); append_image('texto', 'smiling_worm');
 
