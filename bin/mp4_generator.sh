@@ -14,9 +14,9 @@ shopt -s nullglob
 LANG="C.UTF-8"
 
 function absolute_path () {
-  local result="$(sed "s|^~|$PWD|"<<<"$1")"
-  local first_char="$(cut -b 1 <<<"$ORIGINAL_MLT_ABSPATH")"
-  if [ '/' != "$first_char" -a '~' != "$first_char" ]; then
+  local result="$(sed "s|^~/|$HOME/|"<<<"$1")"
+  local first_char="$(cut -b 1 <<<"$result")"
+  if [ '/' != "$first_char" ]; then
     result="$(dirname "$PWD/$result/")"
   fi
   echo "$result"
@@ -25,12 +25,13 @@ function absolute_path () {
 ORIGINAL_MLT_FILE="$1"
 ORIGINAL_MLT_ABSDIR="$(absolute_path $(dirname "$ORIGINAL_MLT_FILE"))"
 
-OUTPUT_FILENAME={2:-"generated.mp4"}
+auto_filename="$(basename "$ORIGINAL_MLT_FILE" .mlt).mp4"
+OUTPUT_FILENAME="${2:-"$auto_filename"}"
 
 OUTPUT_DIRECTORY="$(dirname "$OUTPUT_FILENAME")"
 OUTPUT_ABSDIR="$(absolute_path "$OUTPUT_DIRECTORY")"
-OUTPUT_VIDEO_ABSPATH="$OUTPUT_ABSDIR/$(basename "$ORIGINAL_MLT_FILE" .mlt).mp4"
-TEMP_INPUT="$OUTPUT_DIRECTORY/temp__$(basename "$ORIGINAL_MLT_FILE")"
+OUTPUT_VIDEO_ABSPATH="$OUTPUT_ABSDIR/$(basename $OUTPUT_FILENAME)"
+TEMP_INPUT="$OUTPUT_ABSDIR/temp__$(basename "$ORIGINAL_MLT_FILE")"
 trap "rm -f '$TEMP_INPUT'" EXIT
 trap "rm -f '$TEMP_INPUT'" KILL
 
@@ -49,5 +50,6 @@ EOF
   sed -r -e '/<playlist /s,(<playlist ),\1autoclose="1" ,' |
   sed -r -e '/<property name="resource">[^#/][^<][^<][^<]/s,>,>'"$ORIGINAL_MLT_ABSDIR"'/,' > $TEMP_INPUT
 
+date
 time $MELT "$TEMP_INPUT"
 

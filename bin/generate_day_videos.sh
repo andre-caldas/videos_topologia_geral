@@ -14,7 +14,7 @@ if [ '' == "$INPUT_DIR" ]; then
   exit 1
 fi
 
-OUTPUT_DIR="${2:-'~/Vídeos'}"
+OUTPUT_DIR="${2:-~/Vídeos}"
 mkdir -p "$OUTPUT_DIR"
 
 cd "$INPUT_DIR"
@@ -24,9 +24,7 @@ for x in */insertions.txt; do
   echo "==================================="
   echo "Will generate $x."
   "$BIN_DIR/compose_overlays.sh" "$x"
-set -x
-echo "insertions_$(basename "$(dirname "$x")").mlt"
-  "$BIN_DIR/mp4_generator.sh" "insertions_$(basename "$(dirname "$x")").mlt" "$OUTPUT_DIR/"
+  "$BIN_DIR/mp4_generator.sh" "insertions_$(basename "$(dirname "$x")").mlt" "$OUTPUT_DIR/$(basename "$(dirname "$x")").mp4"
   echo "==================================="
   echo ''
 done
