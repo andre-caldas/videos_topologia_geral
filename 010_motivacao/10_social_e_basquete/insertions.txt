@@ -27,6 +27,11 @@ texto_html = espaços métricos
 template = topico
 texto_html = conjuntos abertos
 
+== 02:30.000 ==
+template = topico
+texto_html = Argh!!!
+javascript = image_above('texto', 'nausea_monster');
+
 == 03:55.000 ==
 template = topico
 texto_html = bolas: $\mathcal{B}_\varepsilon(x)$
