@@ -1,0 +1,157 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.1.0" title="Shotcut version 21.10.24" producer="main_bin">
+  <profile description="HD 1080p 60 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
+  <chain id="chain0" out="00:00:06.183">
+    <property name="length">00:00:06.200</property>
+    <property name="eof">pause</property>
+    <property name="resource">Blast Effect - 16024.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">71d122467427f51b40b5bc367b262336</property>
+    <property name="ignore_points">0</property>
+    <property name="creation_time">2018-05-09T21:23:49</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain1" out="00:00:07.217">
+    <property name="length">00:00:07.233</property>
+    <property name="eof">pause</property>
+    <property name="resource">PUFF_48000.WAV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">fb1393e09eedc636025a1b42ccb826e6</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:06.183"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:07.217"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:00:00.600">
+    <property name="length">00:00:00.617</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:00:00.600"/>
+  </playlist>
+  <producer id="producer0" in="00:00:00.000" out="00:00:00.600">
+    <property name="length">00:00:00.617</property>
+    <property name="eof">pause</property>
+    <property name="resource">10:Blast Effect - 16024.mp4</property>
+    <property name="aspect_ratio">1</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">1</property>
+    <property name="warp_speed">10</property>
+    <property name="warp_resource">Blast Effect - 16024.mp4</property>
+    <property name="mlt_service">timewarp</property>
+    <property name="shotcut:producer">avformat</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">71d122467427f51b40b5bc367b262336</property>
+    <property name="shotcut:caption">Blast Effect - 16024.mp4 (10x)</property>
+    <property name="xml">was here</property>
+    <filter id="filter1" out="00:00:00.600">
+      <property name="version">0.3</property>
+      <property name="mlt_service">frei0r.bluescreen0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00d802</property>
+      <property name="1">0.3</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter0" out="00:00:00.600">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">00:00:00.367=1;00:00:00.600=0</property>
+      <property name="shotcut:animOut">15</property>
+    </filter>
+    <filter id="filter2" out="00:00:00.600">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">brightnessOpacity</property>
+      <property name="alpha">0.8</property>
+      <property name="opacity">0.8</property>
+    </filter>
+    <filter id="filter3" out="00:00:00.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.367=0;00:00:00.600=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">15</property>
+    </filter>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:00.600"/>
+  </playlist>
+  <chain id="chain3" out="00:00:07.217">
+    <property name="length">00:00:07.233</property>
+    <property name="eof">pause</property>
+    <property name="resource">PUFF_48000.WAV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">fb1393e09eedc636025a1b42ccb826e6</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">PUFF_48000.WAV</property>
+    <filter id="filter4" in="00:00:02.617" out="00:00:03.217">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-20</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </chain>
+  <playlist id="playlist1">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A1</property>
+    <entry producer="chain3" in="00:00:02.617" out="00:00:03.217"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:00:00.600">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">18.0979</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1" hide="video"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  </tractor>
+</mlt>

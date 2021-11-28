@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.3.0" title="Shotcut version 21.10.24" producer="main_bin">
+  <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="@total_length-1@">
+    <property name="length">@total_length@</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="@total_length-1@"/>
+  </playlist>
+  <producer id="original_xml" title="Shotcut version 21.10.24" in="00:00:00.000" out="@original_length-1@">
+    <property name="length">@original_length@</property>
+    <property name="eof">pause</property>
+    <property name="resource">@original_path@</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">20.2106</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">@original_md5@</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="original_xml" in="00:00:00.000" out="@original_length-1@"/>
+  </playlist>
+
+<!-- ENTRY POINT child_producers -->
+
+<!-- FOREACH track -->
+<!-- REMOVE LINE
+  <playlist id="overlay_track_@track_id@">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+REMOVE LINE -->
+<!-- ENTRY POINT blank_and_producer_@track_id@ -->
+<!-- REMOVE LINE
+  </playlist>
+REMOVE LINE -->
+<!-- END FOREACH track -->
+
+  <tractor id="tractor1" title="Shotcut version 21.10.24" in="00:00:00.000" out="@total_length-1@">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+<!-- FOREACH track -->
+<!-- REMOVE LINE
+    <track producer="overlay_track_@track_id@"/>
+REMOVE LINE -->
+<!-- END FOREACH track -->
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+<!-- FOREACH track -->
+<!-- REMOVE LINE
+    <transition id="audio_transition_@track_id@">
+      <property name="a_track">0</property>
+      <property name="b_track">@track_number@</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="video_transition_@track_id@">
+      <property name="a_track">1</property>
+      <property name="b_track">@track_number@</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+REMOVE LINE -->
+<!-- END FOREACH track -->
+  </tractor>
+</mlt>

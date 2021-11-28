@@ -1,0 +1,772 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C.UTF-8" version="7.1.0" title="Shotcut version 21.10.24" producer="main_bin">
+  <profile description="HD 1080p 60 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
+  <producer id="tractor0" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+    <property name="ignore_points">1</property>
+  </producer>
+  <producer id="producer0" title="MVI_1254.MP4" in="00:00:00.000" out="00:01:15.700">
+    <property name="length">00:01:15.717</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1254.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">466ad1979c4934418f107f04818931c5</property>
+    <property name="ignore_points">1</property>
+  </producer>
+  <producer id="producer1" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer2" title="MVI_1257.MP4" in="00:00:00.000" out="00:01:26.350">
+    <property name="length">00:01:26.367</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1257.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">9b8dbfed795f8afd7e011e4916bdbb85</property>
+  </producer>
+  <playlist id="main_bin" title="Shotcut version 21.10.24">
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="xml_retain">1</property>
+    <entry producer="tractor0" in="00:00:00.000" out="00:06:16.783"/>
+    <entry producer="producer0" in="00:00:00.000" out="00:01:15.700"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:20:03.900"/>
+    <entry producer="producer2" in="00:00:00.000" out="00:01:26.350"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:21:28.933">
+    <property name="length">00:21:28.950</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:21:28.933"/>
+  </playlist>
+  <producer id="producer3" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <producer id="producer4" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+    <filter id="filter0" in="00:00:23.583" out="00:00:24.367">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer5" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <producer id="producer6" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <tractor id="tractor1" in="00:00:00.000" out="00:00:00.300">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer5" in="00:01:06.000" out="00:01:06.300"/>
+    <track producer="producer6" in="00:01:31.117" out="00:01:31.417"/>
+    <transition id="transition0" out="00:00:00.300">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition1" out="00:00:00.300">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer7" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <tractor id="tractor2" in="00:00:00.000" out="00:00:00.433">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer6" in="00:01:59.767" out="00:02:00.200"/>
+    <track producer="producer7" in="00:02:25.783" out="00:02:26.217"/>
+    <transition id="transition2" out="00:00:00.433">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition3" out="00:00:00.433">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer8" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <tractor id="tractor3" in="00:00:00.000" out="00:00:00.500">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer7" in="00:02:57.483" out="00:02:57.983"/>
+    <track producer="producer8" in="00:03:11.667" out="00:03:12.167"/>
+    <transition id="transition4" out="00:00:00.500">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition5" out="00:00:00.500">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer9" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+    <filter id="filter1" in="00:03:59.633" out="00:04:00.850">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer10" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <producer id="producer11" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+    <filter id="filter2" in="00:04:31.567" out="00:04:33.050">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer12" title="MVI_1253.MP4" in="00:00:00.000" out="00:06:16.783">
+    <property name="length">00:06:16.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1253.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">6147e2885d3f32ed4dbd6611cd8ccfd2</property>
+  </producer>
+  <producer id="producer13" title="MVI_1254.MP4" in="00:00:00.000" out="00:01:15.700">
+    <property name="length">00:01:15.717</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1254.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">466ad1979c4934418f107f04818931c5</property>
+    <property name="ignore_points">0</property>
+  </producer>
+  <tractor id="tractor4" in="00:00:00.000" out="00:00:00.567">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer12" in="00:04:58.417" out="00:04:58.983"/>
+    <track producer="producer13" in="00:00:08.633" out="00:00:09.200"/>
+    <transition id="transition6" out="00:00:00.567">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition7" out="00:00:00.567">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer14" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor5" in="00:00:00.000" out="00:00:00.517">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer13" in="00:01:03.033" out="00:01:03.550"/>
+    <track producer="producer14" in="00:00:15.233" out="00:00:15.750"/>
+    <transition id="transition8" out="00:00:00.517">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition9" out="00:00:00.517">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+    <filter id="filter3" out="00:00:00.517">
+      <property name="version">1.2</property>
+      <property name="mlt_service">frei0r.vertigo</property>
+      <property name="shotcut:filter">vertigo</property>
+      <property name="0">0.02</property>
+      <property name="1">0.2</property>
+    </filter>
+  </tractor>
+  <producer id="producer15" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor6" in="00:00:00.000" out="00:00:00.550">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer14" in="00:01:27.383" out="00:01:27.933"/>
+    <track producer="producer15" in="00:01:51.300" out="00:01:51.850"/>
+    <transition id="transition10" out="00:00:00.550">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition11" out="00:00:00.550">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer16" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+    <filter id="filter4" in="00:02:53.150" out="00:02:54.200">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer17" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer18" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+    <filter id="filter5" in="00:04:06.550" out="00:04:07.400">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer19" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer20" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor7" in="00:00:00.000" out="00:00:00.283">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer19" in="00:05:45.233" out="00:05:45.517"/>
+    <track producer="producer20" in="00:06:11.183" out="00:06:11.467"/>
+    <transition id="transition12" out="00:00:00.283">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition13" out="00:00:00.283">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer21" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor8" in="00:00:00.000" out="00:00:00.517">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer20" in="00:06:30.233" out="00:06:30.750"/>
+    <track producer="producer21" in="00:06:45.800" out="00:06:46.317"/>
+    <transition id="transition14" out="00:00:00.517">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition15" out="00:00:00.517">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer22" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+    <filter id="filter6" in="00:09:01.300" out="00:09:01.833">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer23" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer24" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+    <filter id="filter7" in="00:09:37.783" out="00:09:38.367">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer25" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer26" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+    <filter id="filter8" in="00:10:52.283" out="00:10:52.950">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer27" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer28" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+    <filter id="filter9" in="00:11:54.350" out="00:11:55.183">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </producer>
+  <producer id="producer29" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <producer id="producer30" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor9" in="00:00:00.000" out="00:00:00.217">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer29" in="00:12:52.183" out="00:12:52.400"/>
+    <track producer="producer30" in="00:13:02.750" out="00:13:02.967"/>
+    <transition id="transition16" out="00:00:00.217">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition17" out="00:00:00.217">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <producer id="producer31" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor10" in="00:00:00.000" out="00:00:00.133">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer30" in="00:15:22.717" out="00:15:22.850"/>
+    <track producer="producer31" in="00:15:36.367" out="00:15:36.500"/>
+    <transition id="transition18" out="00:00:00.133">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition19" out="00:00:00.133">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <producer id="producer32" title="MVI_1255.MP4" in="00:00:00.000" out="00:20:03.900">
+    <property name="length">00:20:03.917</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1255.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">487fdde3d5f547dda2aa88d54bfaf558</property>
+  </producer>
+  <tractor id="tractor11" in="00:00:00.000" out="00:00:00.400">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer31" in="00:15:43.200" out="00:15:43.600"/>
+    <track producer="producer32" in="00:16:14.100" out="00:16:14.500"/>
+    <transition id="transition20" out="00:00:00.400">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition21" out="00:00:00.400">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <producer id="producer33" title="MVI_1257.MP4" in="00:00:00.000" out="00:01:26.350">
+    <property name="length">00:01:26.367</property>
+    <property name="eof">pause</property>
+    <property name="resource">MVI_1257.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">9b8dbfed795f8afd7e011e4916bdbb85</property>
+    <filter id="filter10" in="00:00:10.200" out="00:01:11.533">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-172.8 -56 2265.6 1274 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+    <filter id="filter11" in="00:00:10.200" out="00:01:11.533">
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.colgate</property>
+      <property name="threads">0</property>
+      <property name="0">#7f7f7f</property>
+      <property name="1">0.398</property>
+    </filter>
+    <filter id="filter12" in="00:00:10.200" out="00:01:11.533">
+      <property name="start">1</property>
+      <property name="level">1.073</property>
+      <property name="mlt_service">brightness</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <tractor id="tractor12" in="00:00:00.000" out="00:00:00.617">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer32" in="00:18:15.967" out="00:18:16.583"/>
+    <track producer="producer33" in="00:00:10.200" out="00:00:10.817"/>
+    <transition id="transition22" out="00:00:00.617">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition23" out="00:00:00.617">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer3" in="00:00:20.083" out="00:00:23.567"/>
+    <entry producer="producer4" in="00:00:23.583" out="00:00:24.367"/>
+    <entry producer="producer5" in="00:00:24.383" out="00:01:05.983"/>
+    <entry producer="tractor1" in="00:00:00.000" out="00:00:00.300"/>
+    <entry producer="producer6" in="00:01:31.433" out="00:01:59.750"/>
+    <entry producer="tractor2" in="00:00:00.000" out="00:00:00.433"/>
+    <entry producer="producer7" in="00:02:26.233" out="00:02:57.467"/>
+    <entry producer="tractor3" in="00:00:00.000" out="00:00:00.500"/>
+    <entry producer="producer8" in="00:03:12.183" out="00:03:59.617"/>
+    <entry producer="producer9" in="00:03:59.633" out="00:04:00.850"/>
+    <entry producer="producer10" in="00:04:00.867" out="00:04:31.550"/>
+    <entry producer="producer11" in="00:04:31.567" out="00:04:33.050"/>
+    <entry producer="producer12" in="00:04:33.067" out="00:04:58.400"/>
+    <entry producer="tractor4" in="00:00:00.000" out="00:00:00.567"/>
+    <entry producer="producer13" in="00:00:09.217" out="00:01:03.017"/>
+    <entry producer="tractor5" in="00:00:00.000" out="00:00:00.517"/>
+    <entry producer="producer14" in="00:00:15.767" out="00:01:27.367"/>
+    <entry producer="tractor6" in="00:00:00.000" out="00:00:00.550"/>
+    <entry producer="producer15" in="00:01:51.867" out="00:02:53.133"/>
+    <entry producer="producer16" in="00:02:53.150" out="00:02:54.200"/>
+    <entry producer="producer17" in="00:02:54.217" out="00:04:06.533"/>
+    <entry producer="producer18" in="00:04:06.550" out="00:04:07.400"/>
+    <entry producer="producer19" in="00:04:07.417" out="00:05:45.217"/>
+    <entry producer="tractor7" in="00:00:00.000" out="00:00:00.283"/>
+    <entry producer="producer20" in="00:06:11.483" out="00:06:30.217"/>
+    <entry producer="tractor8" in="00:00:00.000" out="00:00:00.517"/>
+    <entry producer="producer21" in="00:06:46.333" out="00:09:01.283"/>
+    <entry producer="producer22" in="00:09:01.300" out="00:09:01.833"/>
+    <entry producer="producer23" in="00:09:01.850" out="00:09:37.767"/>
+    <entry producer="producer24" in="00:09:37.783" out="00:09:38.367"/>
+    <entry producer="producer25" in="00:09:38.383" out="00:10:52.267"/>
+    <entry producer="producer26" in="00:10:52.283" out="00:10:52.950"/>
+    <entry producer="producer27" in="00:10:52.967" out="00:11:54.333"/>
+    <entry producer="producer28" in="00:11:54.350" out="00:11:55.183"/>
+    <entry producer="producer29" in="00:11:55.200" out="00:12:52.167"/>
+    <entry producer="tractor9" in="00:00:00.000" out="00:00:00.217"/>
+    <entry producer="producer30" in="00:13:02.983" out="00:15:22.700"/>
+    <entry producer="tractor10" in="00:00:00.000" out="00:00:00.133"/>
+    <entry producer="producer31" in="00:15:36.517" out="00:15:43.183"/>
+    <entry producer="tractor11" in="00:00:00.000" out="00:00:00.400"/>
+    <entry producer="producer32" in="00:16:14.517" out="00:18:15.950"/>
+    <entry producer="tractor12" in="00:00:00.000" out="00:00:00.617"/>
+    <entry producer="producer33" in="00:00:10.833" out="00:01:11.533"/>
+  </playlist>
+  <tractor id="tractor13" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:21:28.933">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">12.3765</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <transition id="transition24">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition25">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+  </tractor>
+</mlt>

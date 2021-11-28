@@ -1,0 +1,37 @@
+#bg_texto {
+  display: inline;
+  right: 10%;
+  top: 20%;
+
+  background: var(--light-color);
+  border-width: 0;
+  border-style: none;
+  border-radius:70px 10px;
+
+  box-shadow: -10px 20px 2px 1px rgba(0, 0, 0, .3);
+}
+
+#fg_texto {
+  padding: 50px;
+  border-style: none;
+  border-width: 0;
+}
+
+.overlap_1 #bg_texto {
+  top: 40%;
+}
+.overlap_2 #bg_texto {
+  top: 60%;
+}
+
+.lower #bg_texto {
+  bottom: 20%;
+  top: auto;
+}
+.lower.overlap_1 #bg_texto {
+  bottom: 40%;
+}
+.lower.overlap_2 #bg_texto {
+  bottom: 60%;
+}
+

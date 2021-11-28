@@ -1,0 +1,13 @@
+body, body {
+  display: grid;
+  gap: 0.5%;
+}
+
+body.columns {
+  grid-template-columns: repeat(100, 1fr);
+}
+
+body.rows {
+  grid-template-rows: repeat(100, 1fr);
+}
+

@@ -1,0 +1,16 @@
+sequencias.mlt
+
+== globals ==
+aula = Espaços métricos
+
+== 06.000 ==
+template = vinheta
+
+== 35.000 ==
+template = parte
+parte = Sequências
+
+== .000 ==
+template = topico
+texto_html = 
+

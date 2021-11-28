@@ -1,0 +1,11 @@
+.foreground {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.has_image_above {
+  flex-direction:column;
+  align-items: center;
+}
+

@@ -1,0 +1,227 @@
+#!/bin/bash
+
+# Abandoned this, because MLT cannot have one multitrack tractor
+# that has transparency
+
+set -e
+set -x
+
+FPS=60
+
+if [ '' == "$1" ]; then
+  echo "ERROR: required argument!" >&2
+  exit 1
+fi
+
+BIN_DIR="$(dirname "$0")"
+TEMPLATES_PATH="$BIN_DIR/../templates"
+PNG_EXTRACTOR=("python3" "$BIN_DIR/png_extractor.py")
+
+input_path="$1"
+exec < "$input_path"
+
+input_dir="$(dirname "$input_path")"
+master_mlt_path="$input_dir.mlt"
+original_mlt_path="$input_dir/$(basename "$input_path" .txt).mlt"
+
+assets_dir="$BIN_DIR/../assets"
+
+
+function read_entry () {
+  entry_values=()
+  position=''
+  while read x; do
+    [ '' == "$x" ] && continue
+    position="$(echo "$x" | sed -r -e 's,== *([0-9:.]+) *==,\1,')"
+    break
+  done
+
+  if [ '' != "$position" ]; then
+    count="$(($count + 1))"
+    entry_values[id]="$count"
+    IFS="="
+    while read tag_val; do
+      if [ '' == "$tag_val" ]; then
+        break
+      fi
+      local tag="$(echo "$tag_val" | sed -r -e 's, *=.*$,,')"
+      local val="$(echo "$tag_val" | sed -r -e 's,^[^=]*= *,,')"
+      entry_values["$tag"]="$val"
+    done
+  fi
+}
+
+
+mkdir -p generated
+function child_base_path () {
+  echo "generated/overlay_${entry_values[template]}_$count"
+}
+function child_mlt_path () {
+  echo "$(child_base_path).mlt"
+}
+
+
+function create_child_mlt () {
+  local template="${entry_values[template]}"
+  local template_path="$TEMPLATES_PATH/$template/mlt.template"
+  local out_path="$(child_mlt_path)"
+
+  local link_target="generated/${template}_static"
+  if [ ! -e "$link_target" ]; then
+    ln -s "../$assets_dir/$template/${template}_static" "$link_target"
+  fi
+
+  substitute_variables "$template_path" "entry_values" > "$out_path"
+}
+
+
+function create_master_mlt () {
+  local template_path="$TEMPLATES_PATH/master.mlt.template"
+  local out_path="$master_mlt_path"
+
+  local -A variables
+  variables["original_length"]="$(get_mlt_length "$original_mlt_path")"
+  variables["original_length-1"]=""$(calc_length "${variables["original_length"]}" -1)""
+  variables["original_path"]="$original_mlt_path"
+  variables["original_md5"]="$(get_md5sum "$original_mlt_path")"
+  # This should be calculated only at the very end...
+  variables["total_length"]="${variables["original_length"]}"
+  variables["total_length-1"]="${variables["original_length-1"]}"
+
+  substitute_variables "$template_path" "variables" > "$out_path"
+}
+
+
+function populate_master_mlt () {
+  local out_path="$master_mlt_path"
+
+  local -A variables
+  variables["id"]="$count"
+  variables["overlay_xml_length"]="$(get_mlt_length "$(child_mlt_path)")"
+  variables["overlay_xml_length-1"]="$(calc_length "${variables["overlay_xml_length"]}" -1)"
+  variables["overlay_xml_path"]="$(child_mlt_path)"
+  variables["overlay_xml_md5"]="$(get_md5sum "$(child_mlt_path)")"
+
+  local temp_path="$out_path.temp"
+  touch "$temp_path"
+  while grep FOREACH "$out_path"; do
+    sed '/FOREACH/,$d' "$out_path" > "$temp_path"
+
+    sed '0,/FOREACH/d ; /END FOREACH/,$d' "$out_path" |
+      substitute_variables - "variables" >> "$temp_path"
+
+    echo FORxEACH >> "$temp_path"
+    sed '0,/FOREACH/d ; /END FOREACH/,$d' "$out_path" >> "$temp_path"
+    echo END FORxEACH >> "$temp_path"
+
+    sed '0,/END FOREACH/d' "$out_path" >> "$temp_path"
+    cp "$temp_path" "$out_path"
+  done
+  sed -i 's,FORxEACH,FOREACH,' "$out_path"
+  rm "$temp_path"
+}
+
+function cleanup_master_mlt () {
+  local out_path="$master_mlt_path"
+
+  while grep FOREACH "$out_path"; do
+    sed -i '/FOREACH/,/END FOREACH/d' "$out_path"
+  done
+}
+
+function substitute_variables () {
+  local template="$1"
+  local -n xvars="$2"
+  local -a sed_params
+  shift 2
+  if [ '0' == "${#xvars[@]}" ]; then
+    return
+  fi
+
+  for x in "${!xvars[@]}"; do
+    sed_params+=("-e" "s|@$x@|${xvars[$x]}|g")
+  done
+
+  if [ '-' == "$template" ]; then
+    sed -r "${sed_params[@]}" "$@"
+  else
+    sed -r "${sed_params[@]}" "$template" "$@"
+  fi
+}
+
+
+function generate_pngs () {
+  local template="${entry_values[template]}"
+  local html_path="$TEMPLATES_PATH/$template/generator.html"
+
+  for x in "${!entry_values[@]}"; do
+    echo "set_value('$x', '${entry_values[$x]}');"
+  done |
+    "${PNG_EXTRACTOR[@]}" "file:///$PWD/$html_path" "$(child_base_path)" |
+    insert_pngs_into_mlt
+}
+
+
+function insert_pngs_into_mlt () {
+  local -A variables=()
+
+  while read tag_png_path; do
+    local tag="$(echo "$tag_png_path" | sed -r -e 's, .*$,,')"
+    local png_path="$(echo "$tag_png_path" | sed -r -e 's,[^ ]* +,,')"
+    variables["$tag"]="$(basename "$png_path")"
+    variables["$tag"_hash]=$(get_md5sum "$png_path")
+  done
+  substitute_variables "$(child_mlt_path)" "variables" -i
+}
+
+
+function get_mlt_length () {
+  local mlt_path="$1"
+  grep -E 'producer id="black"' "$mlt_path" | sed -r -e 's,.*out="([^"]*)".*,\1,'
+}
+
+
+ONE_MU=17 #"$((1000 / "$FPS"))"
+function calc_length () {
+  local hh="$(echo "$1" | sed -r -e "s,^(..).*,\1,")"
+  local mm="$(echo "$1" | sed -r -e "s,^..:(..).*,\1,")"
+  local ss="$(echo "$1" | sed -r -e "s,^..:..:(..).*,\1,")"
+  local mu="$(echo "$1" | sed -r -e "s,^..:..:..[.](...),\1,")"
+  local difference_frames="$2"
+
+  mu="$(("$mu" + "$difference_frames" * "$ONE_MU"))"
+  if [ "$mu" -ge 1000 ]; then
+    mu="$(echo 00$(("$mu" - 1000)) | sed -r -e 's,.*(...)$,\1,')"
+    ss="$(echo 0$(("$ss" + 1)) | sed -r -e 's,.*(..)$,\1,')"
+  fi
+  if [ "$ss" -ge 60 ]; then
+    ss="$(echo 0$(("$mu" - 60)) | sed -r -e 's,.*(..)$,\1,')"
+    mm="$(echo 0$(("$ss" + 1)) | sed -r -e 's,.*(..)$,\1,')"
+  fi
+  if [ "$ss" -ge 60 ]; then
+    mm="$(echo 0$(("$mu" - 60)) | sed -r -e 's,.*(..)$,\1,')"
+    hh="$(echo 0$(("$ss" + 1)) | sed -r -e 's,.*(..)$,\1,')"
+  fi
+  echo "$hh:$mm:$ss.$mu"
+}
+
+
+function get_md5sum () {
+  md5sum "$1" | sed -e 's, .*,,'
+}
+
+declare next_position_in="00:00:00.000"
+declare position=""
+declare -A entry_values
+declare count=0
+
+read_entry
+create_master_mlt
+while [ '' != "$position" ]; do
+  create_child_mlt
+  populate_master_mlt
+  generate_pngs
+  read_entry
+done
+cleanup_master_mlt
+

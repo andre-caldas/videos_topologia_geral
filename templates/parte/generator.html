@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../main_grid.css" />
+    <link rel="stylesheet" href="local.css" />
+
+    <script src="../load_mathjax.js"></script>
+  </head>
+
+  <body class="columns rows">
+    <div class="background" id="bg_logo">
+      <div class="foreground" id="fg_logo">
+        <div>Not to be used!</div>
+        <div>:-)</div>
+      </div>
+    </div>
+
+    <div class="background" id="bg_texto">
+      <div class="foreground" id="fg_texto">
+        <div id="aula">@aula@</div>
+        <div id="parte">@parte@</div>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script>
+      declare_piece('texto', 'logo');
+      set_value('aula', 'Assunto de hoje é isso, isso e aquilo');
+      set_value('parte', 'Motivação...');
+    </script>
+  </body>
+</html>
+

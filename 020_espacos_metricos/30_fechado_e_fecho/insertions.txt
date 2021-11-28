@@ -1,0 +1,134 @@
+fechado_e_fecho.mlt
+
+== globals ==
+aula = Espaços métricos
+
+== 00.100 ==
+template = vinheta
+
+== 16.000 ==
+template = parte
+parte = A operação de fecho
+
+== 01:10.000 ==
+template = topico
+texto_html = $a \in \overline{B}$
+
+== 01:38.000 ==
+template = topico
+texto_html = como na vida real :-)
+
+== 03:53.000 ==
+template = topico
+texto_html = $B^c \in \mathcal{V}(a)$!!!
+javascript = prepend_image('texto', 'math_girl');
+
+== 04:16.000 ==
+template = topico
+texto_html = se $V \in \mathcal{V}(a)$...
+
+== 04:22.000 ==
+template = topico
+texto_html = então, $V \cup B$ tem interseção com $B$
+
+== 04:24.000 ==
+template = topico
+texto_html = claro... se $B$ não for vazio!
+
+== 05:52.000 ==
+template = topico
+texto_html = se um dia você aprender topologia com <emph>filtros</emph>...
+
+== 05:56.000 ==
+template = topico
+texto_html = vai perceber que $a \in \overline{B}$ exatamente quando
+
+== 05:58.000 ==
+template = topico
+texto_html = $\mathcal{V}(a)|_B$ for um filtro em $B$
+javascript = overlap(1);
+
+== 06:00.000 ==
+template = topico
+texto_html = que, aliás, converge para $a$ <br> como se fosse uma sequência em $B$ convergindo pra $a$!
+javascript = overlap(2);
+
+== 06:15.000 ==
+template = topico
+texto_html = Não vamos fazer, não! É exercício.
+javascript = lower(); image_above('texto', 'forbidden');
+
+== 06:38.000 ==
+template = topico
+texto_html = $V \in \mathcal{V}(a) \Rightarrow a \in V$
+
+== 07:12.000 ==
+template = topico
+texto_html = novamente... $V \in \mathcal{V}(a) \Rightarrow a \in V$
+javascript = prepend_image('texto', 'attention');
+
+== 08:25.000 ==
+template = topico
+texto_html = $\mathrm{cl}^2 = \mathrm{cl}$
+
+== 09:47.000 ==
+template = topico
+texto_html = poderiamos ter usado $B^c$...
+
+== 09:49.000 ==
+template = topico
+texto_html = ... ao invés de termos tomado um $V$
+javascript = overlap();
+
+== 09:53.000 ==
+template = topico
+texto_html = $D^c$
+
+== 10:13.000 ==
+template = topico
+texto_html = $B^c \cap D^c$ é vizinhança de $a$
+
+== 10:15.000 ==
+template = topico
+texto_html = e não intersecta nem $B$, nem $D$
+javascript = overlap();
+
+== 12:24.000 ==
+template = parte
+parte = Conjuntos fechados
+
+== 13:52.000 ==
+template = topico
+texto_html = $F$ é fechado $\Leftrightarrow$ $F^c \in \tau$
+
+== 14:23.000 ==
+template = topico
+texto_html = NÃO significa que os conjuntos que não são abertos são fechados!!!
+javascript = image_above('texto', 'forbidden');
+
+== 15:50.000 ==
+template = topico
+texto_html = $F^c \in \mathcal{V}(a)$
+
+== 16:44.000 ==
+template = topico
+texto_html = $\overline{F} \subset F$
+
+== 20:00.000 ==
+template = topico
+texto_html = $(F \cup K)^c = F^c \cap K^c$
+
+== 22:36.000 ==
+template = topico
+texto_html = $\overline{F} = \overline{\overline{F}}$
+
+== 22:37.000 ==
+template = topico
+texto_html = $\overline{F}$ é igual ao seu próprio fecho (é fechado!)
+javascript = overlap();
+
+== 23:00.000 ==
+template = topico
+texto_html = Depois do <i>intervalo</i> tem mais! :-)
+javascript = prepend_image('texto', 'papito', 'flipped'); append_image('texto', 'papito');
+

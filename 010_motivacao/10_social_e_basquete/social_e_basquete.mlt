@@ -1,0 +1,234 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.2.0" title="Shotcut version 21.11.01" producer="main_bin">
+  <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
+  <producer id="tractor10" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:12:36.850">
+    <property name="length">00:12:36.867</property>
+    <property name="eof">pause</property>
+    <property name="resource">social/social.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">20.2106</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">2bb0ccf196d5f1ed60da96a4253bac9b</property>
+    <property name="ignore_points">1</property>
+  </producer>
+  <producer id="tractor8" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:08:28.233">
+    <property name="length">00:08:28.250</property>
+    <property name="eof">pause</property>
+    <property name="resource">basquete/basquete.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:scaleFactor">0.41674</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">45d791d33b44a0939cf9f7d25190d23e</property>
+  </producer>
+  <producer id="tractor12" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:13:29.233">
+    <property name="length">00:13:29.250</property>
+    <property name="eof">pause</property>
+    <property name="resource">continuidade/continuidade.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">1.00686</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">c8dc0dd0118818c0edaf00a63a18a8ba</property>
+  </producer>
+  <producer id="producer0" in="00:00:00.000" out="00:00:03.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">fundo_alienigena.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-11-04T19:15:36</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">81c6614383f406fed8ea4faa97d6c829</property>
+    <property name="shotcut:caption">fundo_alienigena.png</property>
+    <property name="ignore_points">1</property>
+  </producer>
+  <playlist id="main_bin" title="Shotcut version 21.10.24">
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="xml_retain">1</property>
+    <entry producer="tractor10" in="00:00:00.000" out="00:12:36.850"/>
+    <entry producer="tractor8" in="00:00:00.000" out="00:08:28.233"/>
+    <entry producer="tractor12" in="00:00:00.000" out="00:13:29.233"/>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.983"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:34:38.850">
+    <property name="length">00:34:38.867</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:34:38.850"/>
+  </playlist>
+  <producer id="producer1" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:12:36.850">
+    <property name="length">00:12:36.867</property>
+    <property name="eof">pause</property>
+    <property name="resource">social/social.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">20.2106</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">2bb0ccf196d5f1ed60da96a4253bac9b</property>
+    <property name="ignore_points">0</property>
+  </producer>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">fundo_alienigena.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-11-04T19:15:36</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">81c6614383f406fed8ea4faa97d6c829</property>
+    <property name="shotcut:caption">fundo_alienigena.png</property>
+    <filter id="filter1" in="00:00:00.450" out="00:00:05.467">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=-9557 -1156 11489.3 5159 1;00:00:00.683=0 0 2674.56 1201 1;00:00:01.500~=0 -92.8654 2832.37 1271.86 1;00:00:02.817~=0 -184 3930.24 1764.85 1;00:00:03.900~=0 -1416 7680 3448.67 1;00:00:05.017=-19.32 -2883.76 12643.2 5677.36 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <producer id="producer2" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:08:28.233">
+    <property name="length">00:08:28.250</property>
+    <property name="eof">pause</property>
+    <property name="resource">basquete/basquete.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:scaleFactor">0.41674</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">45d791d33b44a0939cf9f7d25190d23e</property>
+  </producer>
+  <producer id="producer4" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:13:29.233">
+    <property name="length">00:13:29.250</property>
+    <property name="eof">pause</property>
+    <property name="resource">continuidade/continuidade.mlt</property>
+    <property name="mlt_service">xml</property>
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">1.00686</property>
+    <property name="shotcut:trackHeight">30</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="shotcut:virtual">1</property>
+    <property name="shotcut:hash">c8dc0dd0118818c0edaf00a63a18a8ba</property>
+  </producer>
+  <tractor id="tractor0" in="00:00:00.000" out="00:00:00.483">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer2" in="00:08:27.750" out="00:08:28.233"/>
+    <track producer="producer4" in="00:00:00.000" out="00:00:00.483"/>
+    <transition id="transition0" out="00:00:00.483">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition1" out="00:00:00.483">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer1" in="00:00:00.000" out="00:12:36.833"/>
+    <entry producer="producer3" in="00:00:00.450" out="00:00:05.467"/>
+    <entry producer="producer2" in="00:00:00.017" out="00:08:27.733"/>
+    <entry producer="tractor0" in="00:00:00.000" out="00:00:00.483"/>
+    <entry producer="producer4" in="00:00:00.500" out="00:13:29.233"/>
+  </playlist>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:00:00.017"/>
+  </playlist>
+  <tractor id="tractor1" title="Shotcut version 21.11.01" in="00:00:00.000" out="00:34:38.850">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">6.11354</property>
+    <property name="shotcut:trackHeight">10</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>

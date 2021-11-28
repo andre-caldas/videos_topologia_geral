@@ -1,0 +1,35 @@
+#bg_texto {
+  grid-column: 20 / 101;
+  grid-row: 95;
+  background: linear-gradient(70deg, var(--light-color), 70%, transparent);
+  border-width: 0;
+  border-style: none;
+  border-radius:70px 0 0 10px;
+}
+
+#bg_logo {
+  grid-column: 1 / 20;
+  grid-row: 83 / 96;
+  background: linear-gradient(-70deg, var(--dark-color), 90%, transparent);
+  border-width: 0;
+  border-style: none;
+  border-radius:0 70px 10px 0;
+}
+
+
+#fg_texto {
+  padding: 10px;
+  padding-top: 20px;
+  padding-left: 50px;
+  border-style: none;
+  border-width: 0;
+}
+
+#aula {
+  font-size: 40px;
+}
+
+#parte {
+  font-size: 60px;
+}
+

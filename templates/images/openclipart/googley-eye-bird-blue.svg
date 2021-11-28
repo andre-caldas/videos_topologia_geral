@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg4053" viewBox="0 0 96.379 122.71" version="1.1">
+  <defs id="defs4055">
+    <filter id="filter4690" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur4692" stdDeviation="3.4203099"/>
+    </filter>
+  </defs>
+  <g id="layer1" stroke-linejoin="round" stroke="#000" transform="translate(-357.2 -427.16)" fill-rule="evenodd">
+    <path id="path4309-78-4-6" opacity=".57613" d="m157.28 527.59c-10.774-14.506-8.2002-35.349 5.7481-46.554s33.989-8.5282 44.763 5.978 8.2002 35.349-5.7481 46.554c-13.85 11.126-33.732 8.5752-44.568-5.7173" transform="matrix(-.23977 -.0049413 -.0057774 .22798 471.21 339.28)" filter="url(#filter4690)" stroke-linecap="round" stroke-width="4.2761"/>
+    <path id="path4309-7-8-9-3" opacity=".57613" d="m157.28 527.59c-10.774-14.506-8.2002-35.349 5.7481-46.554s33.989-8.5282 44.763 5.978 8.2002 35.349-5.7481 46.554c-13.85 11.126-33.732 8.5752-44.568-5.7173" transform="matrix(.23977 .0049413 -.0057774 .22798 346.72 335.16)" filter="url(#filter4690)" stroke-linecap="round" stroke-width="4.2761"/>
+    <path id="path4339-7-8-2" opacity=".57613" d="m-49.783 512.41c-30.644 119.17-66.048 129.04-153.93 42.918-87.882-86.123-78.729-121.72 39.797-154.77 118.53-33.047 144.78-7.3216 114.13 111.85z" transform="matrix(-.091874 .016439 .019893 .076366 382.11 440.92)" filter="url(#filter4690)" stroke-linecap="round" stroke-width="11.67" fill="#ffc600"/>
+    <path id="path4363-1-2-9" d="m509.32 458.79c-112.67 4.96-160.3-69.76-108.26-169.81 52.05-100.06 140.57-103.95 201.2-8.85 60.62 95.1 19.73 173.71-92.94 178.66z" transform="matrix(.10985 -.041842 .051471 .15443 298.79 455.4)" stroke-linecap="square" stroke-width="7.2325" fill="#0280e5"/>
+    <path id="path4363-7-8" d="m509.32 458.79c-112.67 4.96-160.3-69.76-108.26-169.81 52.05-100.06 140.57-103.95 201.2-8.85 60.62 95.1 19.73 173.71-92.94 178.66z" transform="matrix(.099940 .032638 -.070011 .18001 412.47 413.01)" stroke-linecap="square" stroke-width="7.023" fill="#0280e5"/>
+    <path id="path4383-5-4" d="m556.55 466.45c-17.621-0.20253-4.8044-87.421-13.439-102.78-8.6349-15.361-89.808-49.746-80.822-64.905 8.9857-15.159 78.111 39.55 95.732 39.752 17.621 0.20254 87.985-52.903 96.62-37.542 8.6349 15.361-73.307 47.871-82.293 63.03-8.9857 15.159 1.8224 102.65-15.798 102.45z" transform="matrix(-.16283 .022830 -.025180 -.14915 506.19 579.02)" stroke-linecap="square" stroke-width="6.3422" fill="#e5b302"/>
+    <path id="path4383-1-6-0" d="m556.55 466.45c-17.621-0.20253-4.8044-87.421-13.439-102.78-8.6349-15.361-89.808-49.746-80.822-64.905 8.9857-15.159 78.111 39.55 95.732 39.752 17.621 0.20254 87.985-52.903 96.62-37.542 8.6349 15.361-73.307 47.871-82.293 63.03-8.9857 15.159 1.8224 102.65-15.798 102.45z" transform="matrix(-.16776 -.0036826 .0033856 -.15260 486.98 593.32)" stroke-linecap="square" stroke-width="6.2485" fill="#e5b302"/>
+    <path id="path4341-6-1" d="m412.31 599.21c-116.74 7.07-213.49-139.27-161.24-243.9 52.24-104.64 227.34-115.25 291.84-17.69s-13.87 254.51-130.6 261.59z" transform="matrix(-.24933 -.0051385 .0065906 -.26007 501.82 594.24)" stroke-linecap="square" stroke-width="3.926" fill="#7cccda"/>
+    <path id="path3799-4-6" d="m-272.67 524.66c-29.735-39.334-22.633-95.85 15.865-126.23 38.497-30.382 93.811-23.125 123.55 16.21 29.735 39.334 22.633 95.85-15.865 126.23-38.226 30.168-93.101 23.252-123.01-15.503" transform="matrix(-.24499 -.0052440 -.0054087 .22153 382.69 346.41)" stroke-linecap="square" stroke-width="4.2914" fill="#fff"/>
+    <path id="path4309-78-4" stroke-width="4.2761" transform="matrix(-.23977 -.0049413 -.0057774 .22798 470.49 338.17)" stroke-linecap="square" d="m157.28 527.59c-10.774-14.506-8.2002-35.349 5.7481-46.554s33.989-8.5282 44.763 5.978 8.2002 35.349-5.7481 46.554c-13.85 11.126-33.732 8.5752-44.568-5.7173"/>
+    <path id="path3799-5-1-1" d="m-272.67 524.66c-29.735-39.334-22.633-95.85 15.865-126.23 38.497-30.382 93.811-23.125 123.55 16.21 29.735 39.334 22.633 95.85-15.865 126.23-38.226 30.168-93.101 23.252-123.01-15.503" transform="matrix(.25260 .0053176 -.0058031 .23364 435.23 340.05)" stroke-linecap="square" stroke-width="4.1153" fill="#fff"/>
+    <path id="path4309-7-8-9" stroke-width="4.2761" transform="matrix(.23977 .0049413 -.0057774 .22798 346 334.06)" stroke-linecap="square" d="m157.28 527.59c-10.774-14.506-8.2002-35.349 5.7481-46.554s33.989-8.5282 44.763 5.978 8.2002 35.349-5.7481 46.554c-13.85 11.126-33.732 8.5752-44.568-5.7173"/>
+    <path id="path4339-7-8" d="m-49.783 512.41c-30.644 119.17-66.048 129.04-153.93 42.918-87.882-86.123-78.729-121.72 39.797-154.77 118.53-33.047 144.78-7.3216 114.13 111.85z" transform="matrix(-.091874 .016439 .019893 .076366 381.39 439.82)" stroke-linecap="square" stroke-width="11.67" fill="#ffc600"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Blue googley-eyed bird</dc:title>
+        <dc:date>2013-09-11T18:45:29</dc:date>
+        <dc:description>A cute blue cartoon bird with big eyes.</dc:description>
+        <dc:source>https://openclipart.org/detail/183311/blue-googley-eyed-bird-by-anarres-183311</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>anarres</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bird</rdf:li>
+            <rdf:li>cartoon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

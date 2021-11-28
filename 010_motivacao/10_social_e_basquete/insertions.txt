@@ -1,0 +1,147 @@
+social_e_basquete.mlt
+
+== globals ==
+aula = Apresentação do curso
+
+== 09.000 ==
+template = vinheta
+
+== 23.000 ==
+template = parte
+parte = Motivação
+
+== 34.000 ==
+template = topico
+texto_html = convergência
+
+== 36.000 ==
+template = topico
+texto_html = continuidade
+javascript = overlap();
+
+== 47.000 ==
+template = topico
+texto_html = espaços métricos
+
+== 01:06.000 ==
+template = topico
+texto_html = conjuntos abertos
+
+== 03:55.000 ==
+template = topico
+texto_html = bolas: $\mathcal{B}_\varepsilon(x)$
+
+== 04:56.000 ==
+template = topico
+texto_html = norma: $\| \cdot \|$
+javascript = overlap();
+
+== 05:00.000 ==
+template = topico
+texto_html = distância (métrica)
+
+== 15:26.000 ==
+template = topico
+texto_html = <b>vizinhanças!!!</b>
+
+== 15:47.000 ==
+template = topico
+texto_html = $\forall B \in \mathcal{B}$,<br />eventualmente $x_n \in B$
+
+== 16:19.500 ==
+template = topico
+texto_html = <span style="font-size: 150%;"><b>vizinhanças</b></span>
+
+== 16:31.000 ==
+template = topico
+texto_html = Uma <b>família</b> de vizinhanças do ponto $a$.
+
+== 16:34.000 ==
+template = topico
+texto_html = Uma <b>família</b><br />é um conjunto de conjuntos.
+
+== 19:46.000 ==
+template = topico
+texto_html = Uma vizinhança de $a\ldots$
+
+== 19:48.000 ==
+template = topico
+texto_html = $\ldots$ é um conjunto que contém uma bola centrada em $a$.
+javascript = overlap();
+
+== 21:13.000 ==
+template = parte
+parte = Continuidade com vizinhanças
+
+== 22:10.500 ==
+template = topico
+texto_html = sequências nem sempre funcionam$\ldots$
+javascript = overlap();
+
+== 22:12.500 ==
+template = topico
+texto_html = $\ldots$ mas às vezes funcionam!!!
+
+== 22:25.000 ==
+template = topico
+texto_html = a generalização do conceito de sequências$\ldots$
+
+== 22:29.000 ==
+template = topico
+texto_html = $\ldots$ é o conceito de <b>redes</b>.
+javascript = image_above('texto', 'net');
+
+== 23:34.500 ==
+template = topico
+texto_html = $x$ <i>próximo</i> de $D$ $\Leftrightarrow$ $x \in \overline{D}$
+
+== 23:49.000 ==
+template = topico
+texto_html = uma vizinhança $V$, do ponto $p\ldots$
+
+== 23:51.000 ==
+template = topico
+texto_html = $V \in \mathcal{V}(p)$
+javascript = overlap();
+
+== 27:30.000 ==
+template = topico
+texto_html = <span style="font-size: 120%;">O mais difícil é <b>formular</b><br />o enunciado da questão!</span>
+
+== 29:48.000 ==
+template = topico
+texto_html = Apesar do desenho$\ldots$
+
+== 29:50.000 ==
+template = topico
+texto_html = $\ldots$ agora, $f$ <b>é contínua</b> no ponto $a$!!!
+javascript = overlap();
+
+== 31:43.000 ==
+template = topico
+texto_html = Atenção!!! Novamente$\ldots$
+javascript = prepend_image('texto', 'attention', 'flipped');
+
+== 31:45.000 ==
+template = topico
+texto_html = $\ldots$ apesar do desenho$\ldots$
+javascript = overlap();
+
+== 31:47.000 ==
+template = topico
+texto_html = $\ldots$ agora estamos falando de $f$ <b>contínua</b>!
+
+== 33:03.000 ==
+template = topico
+texto_html = Um conjunto que <b>contém uma vizinhança</b> é$\ldots$
+javascript = image_above('texto', 'doubt');
+
+== 33:06.500 ==
+template = topico
+texto_html = $\ldots$ também uma vizinhança!!!
+
+== 34:35.000 ==
+template = topico
+texto_html = Depois do <i>intervalo</i> tem mais! :-)
+javascript = prepend_image('texto', 'coffee', 'flipped'); append_image('texto', 'coffee');
+
