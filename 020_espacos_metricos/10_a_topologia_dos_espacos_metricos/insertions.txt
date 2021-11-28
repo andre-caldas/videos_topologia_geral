@@ -94,12 +94,12 @@ javascript = lower();
 == 10:07.000 ==
 template = topico
 texto_html = uma família de bolas
-javascript = lower(); prepend_image('texto', 'family_of_balls');
+javascript = lower(); image_above('texto', 'family_of_balls');
 
 == 10:35.000 ==
 template = topico
 texto_html = vizinhança
-javascript = lower(); prepend_image('texto', 'neighbourhood');
+javascript = lower(); image_above('texto', 'neighbourhood');
 
 == 12:04.000 ==
 template = topico

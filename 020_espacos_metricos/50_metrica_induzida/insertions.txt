@@ -1,0 +1,62 @@
+metrica_induzida.mlt
+
+== globals ==
+aula = Espaços métricos
+
+== 07.000 ==
+template = topico
+texto_html = ''
+javascript = image_above('texto', 'sleeping_computer_user');
+
+== 13.000 ==
+template = vinheta
+
+== 59.000 ==
+template = parte
+parte = Métrica induzida
+
+== 02:04.000 ==
+template = topico
+texto_html = iguais, porém diferentes...
+javascript = image_above('texto', 'doubt');
+
+== 05:50.000 ==
+template = parte
+parte = métrica produto
+
+== 08:14.000 ==
+template = topico
+texto_html = 'um professor patriota!'
+javascript = lower(); image_above('texto', 'br_flag');
+
+== 09:04.000 ==
+template = topico
+texto_html = claro que tem outras!
+
+== 10:35.000 ==
+template = topico
+texto_html = 'um professor patriota!'
+javascript = lower(); image_above('texto', 'br_map_and_flag');
+
+== 12:32.000 ==
+template = topico
+texto_html = $A^X$ são as funções $\{f:X \rightarrow A\}$
+
+== 13:39.000 ==
+template = topico
+texto_html = que métrica colocar em $\mathbb{R}^{\mathbb{N}}$?
+
+== 14:20.000 ==
+template = topico
+texto_html = $[0,1]$ com a métrica usual (limitada)
+
+== 14:33.000 ==
+template = topico
+texto_html = Façam exercícios!!! Usem o Talkyard!
+javascript = image_above('texto', 'papito');
+
+== 14:55.000 ==
+template = topico
+texto_html = Até a próxima aula!
+javascript = image_above('texto', 'happy_robot');
+
