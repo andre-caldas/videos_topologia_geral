@@ -6,5 +6,6 @@
 .*
 *.swp
 temp__*
+insertions_*
 
 generated/
