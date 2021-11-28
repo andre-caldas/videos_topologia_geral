@@ -4,7 +4,7 @@
   <producer id="tractor0" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:00:00.400">
     <property name="length">00:00:00.417</property>
     <property name="eof">pause</property>
-    <property name="resource">/home/andre/hd_extra/shotcut/topologia_geral/assets/puff/fire_smoke/fire_smoke.mlt</property>
+    <property name="resource">/home/andre/hd_extra/videos_topologia_geral/assets/puff/fire_smoke/fire_smoke.mlt</property>
     <property name="mlt_service">xml</property>
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
@@ -18,7 +18,7 @@
   <producer id="producer0" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:00:00.600">
     <property name="length">00:00:00.617</property>
     <property name="eof">pause</property>
-    <property name="resource">/home/andre/hd_extra/shotcut/topologia_geral/assets/puff/wide_smoke/wide_smoke.mlt</property>
+    <property name="resource">/home/andre/hd_extra/videos_topologia_geral/assets/puff/wide_smoke/wide_smoke.mlt</property>
     <property name="mlt_service">xml</property>
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
@@ -699,7 +699,7 @@
   <producer id="producer28" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:00:00.400">
     <property name="length">00:00:00.417</property>
     <property name="eof">pause</property>
-    <property name="resource">/home/andre/hd_extra/shotcut/topologia_geral/assets/puff/fire_smoke/fire_smoke.mlt</property>
+    <property name="resource">/home/andre/hd_extra/videos_topologia_geral/assets/puff/fire_smoke/fire_smoke.mlt</property>
     <property name="mlt_service">xml</property>
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
@@ -726,7 +726,7 @@
   <producer id="producer29" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:00:00.400">
     <property name="length">00:00:00.417</property>
     <property name="eof">pause</property>
-    <property name="resource">/home/andre/hd_extra/shotcut/topologia_geral/assets/puff/fire_smoke/fire_smoke.mlt</property>
+    <property name="resource">/home/andre/hd_extra/videos_topologia_geral/assets/puff/fire_smoke/fire_smoke.mlt</property>
     <property name="mlt_service">xml</property>
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
