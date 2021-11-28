@@ -65,13 +65,11 @@ declare server_port="8910"
 )&
 trap "kill $!" EXIT
 trap "kill $!" TERM
-set -x
 coproc "${PNG_EXTRACTOR[@]}"
 trap "kill $COPROC_PID" EXIT
 trap "kill $COPROC_PID" TERM
 png_extractor_output="${COPROC[0]}"
 png_extractor_input="${COPROC[1]}"
-set +x
 
 
 
