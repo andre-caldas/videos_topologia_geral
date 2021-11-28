@@ -50,7 +50,7 @@ javascript = overlap(1);
 
 == 06:00.000 ==
 template = topico
-texto_html = que, aliás, converge para $a$ <br> como se fosse uma sequência em $B$ convergindo pra $a$!
+texto_html = que, aliás, converge para $a$ como se fosse uma sequência em $B$ convergindo para $a$!
 javascript = overlap(2);
 
 == 06:15.000 ==

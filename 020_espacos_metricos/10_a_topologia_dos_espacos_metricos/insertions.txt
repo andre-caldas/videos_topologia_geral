@@ -73,18 +73,18 @@ texto_html = $d(a,b) = 0 \Rightarrow d(a,c) = d(b,c)$
 
 == 07:48.000 ==
 template = topico
-texto_html = $Portanto,<br/>$a \in B_\varepsilon(c) \Rightarrow b \in B_\varepsilon(c)$.
+texto_html = Portanto,<br>$a \in B_\varepsilon(c) \Rightarrow b \in B_\varepsilon(c)$.
 javascript = overlap();
 
 == 08:14.000 ==
 template = topico
-texto_html = $\forall a\, d(a,a) = 0$
+texto_html = $\forall a,\, d(a,a) = 0$
 javascript = lower();
 
 == 08:47.000 ==
 template = topico
 texto_html = Bola de raio $\varepsilon$ centrada em $x$: $B_\varepsilon(x)$.
-javascript = lower(); prepend_image('texto', '3d_soccer');
+javascript = lower(); image_above('texto', '3d_soccer');
 
 == 09:09.000 ==
 template = topico
@@ -163,7 +163,7 @@ javascript = overlap();
 
 == 18:38.000 ==
 template = topico
-texto_html = $\forall a \in A$ vira $a \in A \Rightarrow"
+texto_html = $\forall a \in A$ vira $a \in A \Rightarrow$
 
 == 19:08.000 ==
 template = parte
@@ -185,7 +185,7 @@ texto_html = <div style="text-align: center;">@inline_image:triangle_3@ $\neq$ @
 
 == 23:52.000 ==
 template = topico
-texto_html = $\eta$!
+texto_html = $\eta$
 
 == 23:53.000 ==
 template = topico
@@ -221,7 +221,7 @@ javascript = overlap(2);
 
 == 29:58.000 ==
 template = topico
-texto_html = $a \in \bigcup A_\lambda \Rigtharrow \exists \gamma \in \Lambda$
+texto_html = $a \in \bigcup A_\lambda \Rightarrow \exists \gamma \in \Lambda$
 
 == 30:00.000 ==
 template = topico
@@ -252,12 +252,12 @@ texto_html = $\displaystyle \bigcap B_{\frac{1}{n}}(a) = \{a\}$
 
 == 34:15.000 ==
 template = topico
-texto_html = $\matscr{A} = \{ A_\lambda: \lambda \in \Lambda \}$
+texto_html = $\mathscr{A} = \{ A_\lambda: \lambda \in \Lambda \}$
 javascript = lower();
 
 == 35:03.000 ==
 template = topico
-texto_html = $\displaystyle \bigcup \matscr{A} = \bigcup_{A \in \mathscr{A}} A$
+texto_html = $\displaystyle \bigcup \mathscr{A} = \bigcup_{A \in \mathscr{A}} A$
 
 == 37:10.000 ==
 template = topico

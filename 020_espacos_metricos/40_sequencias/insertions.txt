@@ -28,7 +28,7 @@ texto_html = só essas <emph>VIZINHANÇAS MEONRES</emph>
 
 == 04:48.000 ==
 template = topico
-texto_html = B_1 \supset B_{1/2} \supset B_{1/3} \supset B_{1/4} \supset \bdots$
+texto_html = $B_1 \supset B_{1/2} \supset B_{1/3} \supset B_{1/4} \supset \dotsb$
 
 == 08:08.000 ==
 template = topico
@@ -36,7 +36,7 @@ texto_html = $\mathcal{V}(a)$ tem uma base enumerável
 
 == 10:43.000 ==
 template = topico
-texto_html = $a \in \mathrm{s-cl}(D)$ quando
+texto_html = $a \in \text{s-cl}(D)$ quando
 
 == 10:44.000 ==
 template = topico
@@ -45,12 +45,12 @@ javascript = overlap();
 
 == 12:37.000 ==
 template = topico
-texto_html = $s-cl(D) \subset \overline{D}$: sempre!
+texto_html = $\text{s-cl}(D) \subset \overline{D}$...... sempre!
 
 == 12:38.000 ==
 template = topico
-texto_html = $\overline{D} \subset s-cl(D)$: NEM SEMPRE!
-javascript = overlay(); prepend_image('texto', 'smart_girl', 'flipped');
+texto_html = <emph>NEM SEMPRE</emph>... $\overline{D} \subset \text{s-cl}(D)$
+javascript = overlap(); prepend_image('texto', 'smart_girl', 'flipped');
 
 == 13:22.000 ==
 template = parte
@@ -66,7 +66,7 @@ texto_html = eventualmente, $x_n \in f^{-1}(V)$
 
 == 16:00.000 ==
 template = topico
-texto_html = continuidade $\Rightarrow$ continuidade sequencial: SEMPRE
+texto_html = <emph>SEMPRE</emph>... continuidade $\Rightarrow$ continuidade sequencial
 
 == 16:05.000 ==
 template = topico

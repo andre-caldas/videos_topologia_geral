@@ -76,7 +76,7 @@ javascript = overlap();
 
 == 04:54.000 ==
 template = topico
-texto_html = vamos só dizer <quote>é igualzinho ao que já fizemos pros espaços métricos</quote>
+texto_html = vamos só dizer que <emph>é igualzinho ao que já fizemos pros espaços métricos</emph> ;-)
 javascript = prepend_image('texto', 'math_girl');
 
 == 04:57.000 ==
@@ -95,7 +95,7 @@ texto_html = $\mathring{D} = \{x \in {\color{blue} D}: D \in \mathcal{V}(x) \}$
 
 == 05:31.000 ==
 template = topico
-texto_html = $\mathring{D} = \{x \in {<s>X</span>}: D \in \mathcal{V}(x) \}$
+texto_html = $\mathring{D} = \{x \in {\color{red} X}: D \in \mathcal{V}(x) \}$
 javascript = overlap();
 
 == 06:12.000 ==
@@ -121,12 +121,12 @@ javascript = overlap(); prepend_image('texto', 'attention');
 
 == 07:15.000 ==
 template = topico
-texto_html = ''
+texto_html = 
 javascript = image_above('texto', 'nausea_monster');
 
 == 09:14.000 ==
 template = topico
-texto_html = ''
+texto_html = 
 javascript = image_above('texto', 'smiling_worm');
 
 == 10:33.000 ==
@@ -146,7 +146,7 @@ javascript = lower(); prepend_image('texto', 'happy_robot');
 
 == 12:57.000 ==
 template = topico
-texto_html = $B \subset D$ e $B$ é vizinhança de todos os seus pontos
+texto_html = $B \subset D$,  e $B$ é vizinhança de todos os seus pontos
 
 == 12:59.000 ==
 template = topico

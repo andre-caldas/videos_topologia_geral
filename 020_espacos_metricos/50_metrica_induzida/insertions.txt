@@ -5,7 +5,7 @@ aula = Espaços métricos
 
 == 07.000 ==
 template = topico
-texto_html = ''
+texto_html = 
 javascript = image_above('texto', 'sleeping_computer_user');
 
 == 13.000 ==
@@ -26,7 +26,7 @@ parte = métrica produto
 
 == 08:14.000 ==
 template = topico
-texto_html = 'um professor patriota!'
+texto_html = um professor patriota!
 javascript = lower(); image_above('texto', 'br_flag');
 
 == 09:04.000 ==
@@ -35,12 +35,12 @@ texto_html = claro que tem outras!
 
 == 10:35.000 ==
 template = topico
-texto_html = 'um professor patriota!'
+texto_html = um professor patriota!
 javascript = lower(); image_above('texto', 'br_map_and_flag');
 
 == 12:32.000 ==
 template = topico
-texto_html = $A^X$ são as funções $\{f:X \rightarrow A\}$
+texto_html = $A^X = \{f:X \rightarrow A\}$
 
 == 13:39.000 ==
 template = topico
