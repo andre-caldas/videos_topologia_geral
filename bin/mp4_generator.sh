@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-set -x
+#set -x
 
 BIN_DIR="$(dirname "$0")"
 if [ '.' == "$BIN_DIR" ]; then

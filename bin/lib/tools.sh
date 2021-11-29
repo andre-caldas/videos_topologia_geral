@@ -207,11 +207,9 @@ function update_track_positions () {
   # Add blanks length
   IFS=$'\n' lengths=($(cat_overlay_template | sed -r "$selector!d" | sed -r '/<blank/!d' | sed -r 's,.*length="([^"]*)".*,\1,'))
   for length in "${lengths[@]}"; do
-echo "Read length: $length." >&2
     if grep ':' <<<"$length"; then
       length="$(len_to_mu "$length")"
     fi
-echo "MU length: $length." >&2
     increase_track_position "$variant" "$track_id" "$length"
   done
 }
