@@ -54,7 +54,7 @@ duration="$(sed -r '/id="black"/!d; /black/s/.*out="([^"]*)".*/\1/' "$ORIGINAL_M
 
 echo "======="
 echo "Will generate file: $duration."
-echo "That is... $(expr "$(len_to_mu "$duration")" / 17) frames."
+echo "That is... $(("$(len_to_mu "$duration")" * 60 / 1000)) frames."
 echo "======="
 
 date
