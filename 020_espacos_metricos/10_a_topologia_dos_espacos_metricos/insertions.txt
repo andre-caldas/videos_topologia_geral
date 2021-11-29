@@ -25,17 +25,13 @@ texto_html = o contexto é que vai dizer se o $0$ está ou não incluso
 == 02:03.500 ==
 template = topico
 texto_html = $d(a,a) = 0$
-javascript = lower();
 
 == 02:36.000 ==
-template = topico
+template = topico_3
 texto_html = por exemplo,
+texto_html = se $\forall n \in \mathbb{N}^*\,quad\| \vec{v} \| < \frac{1}{n}$,
+texto_html = então $\vec{v} = \vec{0}$
 javascript = lower();
-
-== 02:37.000 ==
-template = topico
-texto_html = $\forall n \in \mathbb{N}^*, \| \vec{v} \| < \frac{1}{n}$<br/>$\quad \Rightarrow \vec{v} = \vec{0}$
-javascript = lower(); overlap();
 
 == 03:19.000 ==
 template = topico
@@ -46,36 +42,21 @@ template = topico
 texto_html = axiomas
 
 == 05:28.000 ==
-template = topico
+template = topico_2
 texto_html = $a \not \rightarrow a$<big>?</big>...
-
-== 05:30.000 ==
-template = topico
 texto_html = Nunca!!!
-javascript = overlap();
 
 == 05:53.000 ==
-template = topico
-texto_html = $x_n \rightarrow a$ e $x_n \rightarrow b$ $\Rightarrow$ $a = b$?
-
-== 05:55.000 ==
-template = topico
+template = topico_3
+texto_html = $\displaystyle \begin{rcases}x_n \rightarrow a \\ x_n \rightarrow b \end{rcases} \Rightarrow a = b$?
 texto_html = Nos espaços métricos, sim!
-javascript = overlap();
-
-== 06:00.000 ==
-template = topico
 texto_html = Em geral, não.
-javascript = prepend_image('texto', 'forbidden'); append_image('texto', 'forbidden', 'flipped');
+javascript = prepend_image('texto_3', 'forbidden'); append_image('texto_3', 'forbidden', 'flipped');
 
 == 07:45.000 ==
-template = topico
+template = topico_2
 texto_html = $d(a,b) = 0 \Rightarrow d(a,c) = d(b,c)$
-
-== 07:48.000 ==
-template = topico
 texto_html = Portanto,<br>$a \in B_\varepsilon(c) \Rightarrow b \in B_\varepsilon(c)$.
-javascript = overlap();
 
 == 08:14.000 ==
 template = topico
@@ -99,7 +80,7 @@ javascript = lower(); image_above('texto', 'family_of_balls');
 
 == 10:35.000 ==
 template = topico
-texto_html = vizinhança
+texto_html = uma vizinhança
 javascript = lower(); image_above('texto', 'neighbourhood');
 
 == 12:04.000 ==
@@ -145,26 +126,14 @@ template = topico
 texto_html = o tal $\varepsilon$ era só pra escolher uma bola qualquer
 
 == 17:48.000 ==
-template = topico
+template = topico_2
 texto_html = uma vizinhança de $a$ é todo conjunto...
-
-== 17:52.000 ==
-template = topico
 texto_html = ... que contém uma bola centrada em $a$
-javascript = overlap();
 
-== 18:23.000 ==
-template = topico
+== 18:25.000 ==
+template = topico_2
 texto_html = Se tivermos $\mathcal{V}(a)$...
-
-== 18:27.000 ==
-template = topico
 texto_html = ... não precisamos mais da métrica!
-javascript = overlap();
-
-== 18:38.000 ==
-template = topico
-texto_html = $\forall a \in A$ vira $a \in A \Rightarrow$
 
 == 19:08.000 ==
 template = parte
@@ -185,13 +154,9 @@ template = topico
 texto_html = <div style="text-align: center;">@inline_image:triangle_3@ $\neq$ @inline_image:triangle_4@<br>desigualdade triangular :-)</div>
 
 == 23:52.000 ==
-template = topico
-texto_html = $\eta$
-
-== 23:53.000 ==
-template = topico
+template = topico_2
+texto_html = menor que $\eta$!!!
 texto_html = $x \in B_\eta(b) \Rightarrow d(b,c) < \eta$
-javascript = overlap();
 
 == 24:25.000 ==
 template = topico
@@ -207,32 +172,17 @@ template = parte
 parte = Propriedades dos abertos
 
 == 27:49.000 ==
-template = topico
+template = topico_3
 texto_html = sem espaços métricos...
-
-== 27:51.000 ==
-template = topico
 texto_html = se tivéssemos uma família de vizinhanças de $a$: $\mathcal{V}(a)$...
-javascript = overlap(1);
-
-== 27:53.000 ==
-template = topico
 texto_html = $X$ é vizinahnça de $a$ $\Rightarrow$ $\mathcal{V}(a) \neq \emptyset$ 
-javascript = overlap(2);
 
 == 29:58.000 ==
-template = topico
+template = topico_3
 texto_html = $a \in \bigcup A_\lambda \Rightarrow \exists \gamma \in \Lambda$
-
-== 30:00.000 ==
-template = topico
 texto_html = então, $A_\gamma \in \mathcal{V}(a)$
-javascript = lower(); overlap(2);
-
-== 30:02.000 ==
-template = topico
 texto_html = então, $\bigcup A_\lambda \in \mathcal{V}(a)$
-javascript = lower(); overlap(1);
+javascript = lower();
 
 == 30:04.000 ==
 template = topico

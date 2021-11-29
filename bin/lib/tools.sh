@@ -48,7 +48,20 @@ function _read_entry_sub () {
       break
     fi
     echo "$tag = $val"
-    array["$tag"]="$val"
+    if [ '' == "${array["$tag"]}" ]; then
+      array["$tag"]="$val"
+    else
+      if [ '*' != "${array["$tag"]}" ]; then
+        array["${tag}_1"]="${array["$tag"]}"
+        # Just so that we know we should not use array["$tag"].
+        array["$tag"]='*'
+      fi
+      local c=2
+      while [ -v "array[${tag}_${c}]" ]; do
+        c="$(("$c" + 1))"
+      done
+    array["${tag}_$c"]="$val"
+    fi
   done
 }
 

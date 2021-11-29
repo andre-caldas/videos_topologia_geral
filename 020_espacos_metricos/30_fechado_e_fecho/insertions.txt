@@ -40,18 +40,10 @@ template = topico
 texto_html = se um dia você aprender topologia com <emph>filtros</emph>...
 
 == 05:56.000 ==
-template = topico
+template = topico_3
 texto_html = vai perceber que $a \in \overline{B}$ exatamente quando
-
-== 05:58.000 ==
-template = topico
 texto_html = $\mathcal{V}(a)|_B$ for um filtro em $B$
-javascript = overlap(1);
-
-== 06:00.000 ==
-template = topico
 texto_html = que, aliás, converge para $a$ como se fosse uma sequência em $B$ convergindo para $a$!
-javascript = overlap(2);
 
 == 06:15.000 ==
 template = topico
@@ -72,26 +64,18 @@ template = topico
 texto_html = $\mathrm{cl}^2 = \mathrm{cl}$
 
 == 09:47.000 ==
-template = topico
+template = topico_2
 texto_html = poderiamos ter usado $B^c$...
-
-== 09:49.000 ==
-template = topico
 texto_html = ... ao invés de termos tomado um $V$
-javascript = overlap();
 
 == 09:53.000 ==
 template = topico
 texto_html = $D^c$
 
 == 10:13.000 ==
-template = topico
+template = topico_2
 texto_html = $B^c \cap D^c$ é vizinhança de $a$
-
-== 10:15.000 ==
-template = topico
 texto_html = e não intersecta nem $B$, nem $D$
-javascript = overlap();
 
 == 12:24.000 ==
 template = parte
@@ -119,13 +103,9 @@ template = topico
 texto_html = $(F \cup K)^c = F^c \cap K^c$
 
 == 22:36.000 ==
-template = topico
+template = topico_2
 texto_html = $\overline{F} = \overline{\overline{F}}$
-
-== 22:37.000 ==
-template = topico
 texto_html = $\overline{F}$ é igual ao seu próprio fecho (é fechado!)
-javascript = overlap();
 
 == 23:00.000 ==
 template = topico

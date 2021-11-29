@@ -1,8 +1,19 @@
-#bg_texto {
+#container {
+  position: absolute;
+  right: 0;
+  margin-left: 40%;
+  min-width: 40%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.background {
   display: inline;
   right: 3%;
-  top: 20%;
-  margin-left: 40%;
+  margin: 2em;
+  margin-bottom: 0;
 
   background: var(--light-color);
   border-width: 0;
@@ -12,27 +23,34 @@
   box-shadow: -10px 20px 2px 1px rgba(0, 0, 0, .3);
 }
 
-#fg_texto {
+.foreground {
   padding: 50px;
   border-style: none;
   border-width: 0;
 }
 
-.overlap_1 #bg_texto {
-  top: 40%;
-}
-.overlap_2 #bg_texto {
-  top: 60%;
+.lower #container {
+  bottom: 0;
 }
 
-.lower #bg_texto {
-  bottom: 20%;
-  top: auto;
+.lower .background {
+  margin: 2em;
+  margin-top: 0;
 }
-.lower.overlap_1 #bg_texto {
-  bottom: 40%;
+
+.overlap_1 .background {
+  margin-top: 40%;
 }
-.lower.overlap_2 #bg_texto {
-  bottom: 60%;
+
+.lower.overlap_1 .background {
+  margin-bottom: 40%;
+}
+
+.overlap_2 .background {
+  margin-top: 60%;
+}
+
+.lower.overlap_2 .background {
+  margin-bottom: 60%;
 }
 

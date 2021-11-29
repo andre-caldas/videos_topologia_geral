@@ -9,17 +9,20 @@
     <script src="../load_mathjax.js"></script>
   </head>
 
-  <body class="absolute">
-    <div class="background" id="bg_texto">
-      <div class="foreground" id="fg_texto">
-        <div id="texto" class="texto">@texto_html@</div>
+  <body>
+    <div id="container">
+      <div class="background" id="bg_texto">
+        <div class="foreground" id="fg_texto">
+          <div id="texto" class="texto">@texto_html@</div>
+        </div>
       </div>
     </div>
 
     <script src="../main.js"></script>
     <script>
       declare_piece('texto');
-      set_value('texto_html', '<div style="text-align: center;">@inline_image:triangle_1@ $\\neq$ @inline_image:triangle_2@<br/>desigualdade <emph>triangular</emph> :-)</div>');
+      set_value('texto_html', 'pequeno');
+//      set_value('texto_html', '<div style="text-align: center;">@inline_image:triangle_1@ $\\neq$ @inline_image:triangle_2@<br/>desigualdade <emph>triangular</emph> :-)</div>');
 //      prepend_image('texto', 'coffee');
 //      image_above('texto', 'coffee');
 //      lower();

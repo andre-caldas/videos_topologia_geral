@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../main_flex.css" />
+    <link rel="stylesheet" href="local.css" />
+
+    <script src="../load_mathjax.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="background" id="bg_texto_1">
+        <div class="foreground" id="fg_texto_1">
+          <div id="texto" class="texto">@texto_html_1@</div>
+        </div>
+      </div>
+
+      <div class="background" id="bg_texto_2">
+        <div class="foreground" id="fg_texto_2">
+          <div id="texto" class="texto">@texto_html_2@</div>
+        </div>
+      </div>
+
+      <div class="background" id="bg_texto_3">
+        <div class="foreground" id="fg_texto_3">
+          <div id="texto" class="texto">@texto_html_3@</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script>
+      declare_piece('texto_1', 'texto_2', 'texto_3');
+      set_value('texto_html_1', 'por exemplo,');
+      set_value('texto_html_2', 'já que estamos aqui, mesmo...');
+      set_value('texto_html_3', '<div style="text-align: center;">@inline_image:triangle_1@ $\\neq$ @inline_image:triangle_2@<br/>desigualdade <emph>triangular</emph> :-)</div>');
+//      prepend_image('texto', 'coffee');
+//      image_above('texto', 'coffee');
+      lower();
+    </script>
+  </body>
+</html>
+

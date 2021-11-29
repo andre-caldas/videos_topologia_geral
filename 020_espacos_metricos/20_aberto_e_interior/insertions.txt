@@ -39,18 +39,10 @@ texto_html = remover o muro... <emph>break the wall!</emph>
 javascript = lower(); image_above('texto', 'gate');
 
 == 03:29.000 ==
-template = topico
+template = topico_3
 texto_html = em geral, $\mathring{D} \subset D$...
-
-== 03:30.000 ==
-template = topico
 texto_html = ... mas quando o conjunto $D$ é aberto...
-javascript = overlap(1);
-
-== 03:31.000 ==
-template = topico
 texto_html = $D = \mathring{D}$
-javascript = overlap(2);
 
 == 03:40.000 ==
 template = topico
@@ -66,37 +58,21 @@ template = parte
 parte = Propriedades do interior
 
 == 04:50.000 ==
-template = topico
+template = topico_3
 texto_html = preste bastante atenção e tente demonstrar tudo...
-
-== 04:52.000 ==
-template = topico
 texto_html = ... porque na verdade, não vamos fazer tudo de novo, não!
-javascript = overlap();
-
-== 04:54.000 ==
-template = topico
 texto_html = vamos só dizer que <emph>é igualzinho ao que já fizemos pros espaços métricos</emph> ;-)
-javascript = prepend_image('texto', 'math_girl');
+javascript = prepend_image('texto_3', 'math_girl');
 
 == 04:57.000 ==
-template = topico
+template = topico_2
 texto_html = $\mathring{D}$
-javascript = overlap();
-
-== 04:58.000 ==
-template = topico
 texto_html = $\mathcal{V}(x)$
-javascript = overlap(2);
 
 == 05:30.000 ==
-template = topico
+template = topico_2
 texto_html = $\mathring{D} = \{x \in {\color{blue} D}: D \in \mathcal{V}(x) \}$
-
-== 05:31.000 ==
-template = topico
 texto_html = $\mathring{D} = \{x \in {\color{red} X}: D \in \mathcal{V}(x) \}$
-javascript = overlap();
 
 == 06:12.000 ==
 template = topico
@@ -111,13 +87,10 @@ template = topico
 texto_html = a definição de <emph>sistema de vizinhanças</emph> vai exigir isso
 
 == 06:47.000 ==
-template = topico
+template = topico_2
 texto_html = $D \in \mathcal{V}(x) \Rightarrow x \in D$
-
-== 06:48.000 ==
-template = topico
 texto_html = é o mesmo que exigir que $\mathring{D} \subset D$!!!
-javascript = overlap(); prepend_image('texto', 'attention');
+javascript = prepend_image('texto_2', 'attention');
 
 == 07:15.000 ==
 template = topico
@@ -145,13 +118,9 @@ texto_html = a bola <emph>aberta</emph> é <b>aberta</b>
 javascript = lower(); prepend_image('texto', 'happy_robot');
 
 == 12:57.000 ==
-template = topico
+template = topico_2
 texto_html = $B \subset D$,  e $B$ é vizinhança de todos os seus pontos
-
-== 12:59.000 ==
-template = topico
 texto_html = então, $D$ também é vizinhança de todos os pontos de $B$
-javascript = overlap();
 
 == 13:09.000 ==
 template = topico
@@ -162,18 +131,11 @@ template = topico
 texto_html = por conter $B$, $\mathring{D} \in \mathcal{V}(x)$
 
 == 14:50.000 ==
-template = topico
+template = topico_3
 texto_html = sabemos que os abertos são o interior de si mesmos
-
-== 14:52.000 ==
-template = topico
 texto_html = mas será que $\mathring{D}$ é sempre aberto?
-javascript = overlap(1);
-
-== 14:54.000 ==
-template = topico
 texto_html = é isso o que diz a expressão $\mathring{\mathring{D}} = \mathring{D}$
-javascript = lower(); image_above('texto', 'smiling_worm');
+javascript = image_above('texto_3', 'smiling_worm');
 
 == 15:30.000 ==
 template = topico
@@ -184,62 +146,51 @@ template = topico
 texto_html = $\tau = \mathscr{Im}(\mathrm{int})$
 
 == 16:59.000 ==
-template = topico
+template = topico_3
 texto_html = seguindo a mesma lógica que usamos pra bola
-
-== 17:01.000 ==
-template = topico
 texto_html = $A \in \tau$, $A \subset D$
-javascript = overlap(1);
-
-== 17:03.000 ==
-template = topico
 texto_html = $A \subset \mathring{D}$
-javascript = overlap(2);
 
 == 17:23.000 ==
-template = topico
-texto_html = $D$ é vizinhança de um ponto $x$
-
-== 17:23.000 ==
-template = topico
-texto_html = quando contém um aberto que contém $x$
-javascript = overlap(); prepend_image('texto', 'attention');
+template = topico_2
+texto_html = $D$ é vizinhança de um ponto $x$...
+texto_html = ... quando contém um aberto que contém $x$
+javascript = prepend_image('texto_2', 'attention');
 
 == 18:10.000 ==
 template = topico
 texto_html = não falei!? :-)
-javascript = overlap(); prepend_image('texto', 'attention');
+javascript = prepend_image('texto', 'attention');
 
-== 20:21.000 ==
+== 20:25.000 ==
 template = topico
 texto_html = ahhhh...
 javascript = lower(); image_above('texto', 'yawn');
 
-== 20:23.000 ==
+== 20:26.000 ==
 template = topico
 texto_html = zzzzzzz...
 javascript = image_above('texto', 'sleeping_cute_student');
 
-== 20:25.000 ==
-template = topico
-texto_html = zzzzzzz...
-javascript = lower(); image_above('texto', 'sleeping_computer_user');
-
 == 20:27.000 ==
 template = topico
 texto_html = zzzzzzz...
-javascript = image_above('texto', 'sleeping_student');
+javascript = overlap(1); lower(); image_above('texto', 'sleeping_computer_user');
+
+== 20:28.000 ==
+template = topico
+texto_html = zzzzzzz...
+javascript = overlap(2); image_above('texto', 'sleeping_student');
 
 == 20:29.000 ==
 template = topico
 texto_html = ahhhh...
-javascript = lower(); image_above('texto', 'yawn');
+javascript = overlap(2); image_above('texto', 'yawn');
 
 == 21:12.000 ==
 template = topico
 texto_html = moleza!
-javascript = lower(); image_above('texto', 'wink');
+javascript = image_above('texto', 'wink');
 
 == 37:10.000 ==
 template = topico

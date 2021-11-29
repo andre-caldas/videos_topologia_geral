@@ -35,22 +35,15 @@ template = topico
 texto_html = $\mathcal{V}(a)$ tem uma base enumerável
 
 == 10:43.000 ==
-template = topico
+template = topico_2
 texto_html = $a \in \text{s-cl}(D)$ quando
-
-== 10:44.000 ==
-template = topico
 texto_html = existe $x_n \in D$, com $x_n \rightarrow a$
-javascript = overlap();
 
 == 12:37.000 ==
-template = topico
+template = topico_2
 texto_html = $\text{s-cl}(D) \subset \overline{D}$...... sempre!
-
-== 12:38.000 ==
-template = topico
 texto_html = <emph>NEM SEMPRE</emph>... $\overline{D} \subset \text{s-cl}(D)$
-javascript = overlap(); prepend_image('texto', 'smart_girl', 'flipped');
+javascript = prepend_image('texto_2', 'smart_girl', 'flipped');
 
 == 13:22.000 ==
 template = parte
@@ -69,14 +62,10 @@ template = topico
 texto_html = <emph>SEMPRE</emph>... continuidade $\Rightarrow$ continuidade sequencial
 
 == 16:05.000 ==
-template = topico
+template = topico_2
 texto_html = continuidade sequencia $\Rightarrow$ continuidade: NEM SEMPRE
-javascript = prepend_image('texto', 'forbidden');
-
-== 16:07.000 ==
-template = topico
 texto_html = no caso dos espaços métricos... VALE
-javascript = overlap(); prepend_image('texto', 'math_girl');
+javascript = prepend_image('texto_1', 'forbidden'); prepend_image('texto_2', 'math_girl');
 
 == 17:35.000 ==
 template = topico
@@ -86,7 +75,7 @@ texto_html = é só tomar $x_n \in B_{1/n}(a)$
 template = topico
 texto_html = $B_{1/n} \setminus f^{-1}(V) \neq \emtpyset$
 
-== 19:13.000 ==
+== 19:50.000 ==
 template = topico
 texto_html = $x_n \in B_{1/n} \setminus f^{-1}(V) \neq \emtpyset$
 
