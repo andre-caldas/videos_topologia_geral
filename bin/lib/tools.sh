@@ -177,7 +177,7 @@ function insert_tracks () {
   local selector="/<playlist *id=\"playlist$track_id\"/,/playlist>/"
   cat_overlay_template |
     sed "$selector!d" |
-    sed -r '/entry/!d' |
+    sed -r '/<entry|<blank/!d' |
     sed -r -e 's,( id=")([^"]*)("),'"\1@id@_overlay_\2\3," |
     sed -r -e 's,( producer=")([^"]*)("),'"\1@id@_overlay_\2\3," |
     substitute_variables - "entry_values"
@@ -189,11 +189,30 @@ function update_track_positions () {
 
   local selector="/<playlist *id=\"playlist$track_id\"/,/playlist>/"
   local -a outs_ins
-  IFS=$'\n' outs_ins=($(cat_overlay_template | sed -r "$selector!d" | sed -r '/entry/!d' | sed -r 's,.*in="([^"]*)".*out="([^"]*)".*,\2 \1,'))
+  local out_in
+
+  # Add producers entry length
+  IFS=$'\n' outs_ins=($(cat_overlay_template | sed -r "$selector!d" | sed -r '/<entry/!d' | sed -r 's,.*in="([^"]*)".*out="([^"]*)".*,\2 \1,'))
   for out_in in "${outs_ins[@]}"; do
     local out in
     IFS=" " read -r out in <<<"$out_in"
     increase_track_position "$variant" "$track_id" "$(len_minus_len_to_mu "$out" "$in")"
+    # I think we are missing one frame...
+    increase_track_position "$variant" "$track_id" "$ONE_FRAME"
+  done
+
+  local -a lengths
+  local length
+
+  # Add blanks length
+  IFS=$'\n' lengths=($(cat_overlay_template | sed -r "$selector!d" | sed -r '/<blank/!d' | sed -r 's,.*length="([^"]*)".*,\1,'))
+  for length in "${lengths[@]}"; do
+echo "Read length: $length." >&2
+    if grep ':' <<<"$length"; then
+      length="$(len_to_mu "$length")"
+    fi
+echo "MU length: $length." >&2
+    increase_track_position "$variant" "$track_id" "$length"
   done
 }
 
