@@ -14,7 +14,7 @@ if [ '' == "$INPUT_DIR" ]; then
   exit 1
 fi
 
-OUTPUT_DIR="${2:-~/Vídeos}"
+OUTPUT_DIR="${2:-"$HOME/Vídeos"}"
 mkdir -p "$OUTPUT_DIR"
 
 exclude_map=($EXCLUDE_MAP)
@@ -29,11 +29,20 @@ for x in */insertions.txt; do
     echo "===> Ignoring file $x."
     continue
   fi
+  mp4_path="$OUTPUT_DIR/$(basename "$(dirname "$x")").mp4"
+  stamp_file="$mp4_path.stamp"
+  if [ ! "$x" -nt "$stamp_file" ]; then
+    echo "====> SKIPING.... Not generating $mp4_path."
+    echo "Remove timestamp $stamp_file to force generation."
+    continue
+  fi
 
   echo "==================================="
-  echo "Will generate $x."
+  echo "Will generate from $x."
   "$BIN_DIR/compose_overlays.sh" "$x"
-  "$BIN_DIR/mp4_generator.sh" "insertions_$(basename "$(dirname "$x")").mlt" "$OUTPUT_DIR/$(basename "$(dirname "$x")").mp4"
+  echo "Will generate $mp4_path."
+  "$BIN_DIR/mp4_generator.sh" "insertions_$(basename "$(dirname "$x")").mlt" "$mp4_path"
+  touch "$stamp_file"
   echo "==================================="
   echo ''
 done
