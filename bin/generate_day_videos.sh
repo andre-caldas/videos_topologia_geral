@@ -36,13 +36,24 @@ for x in */insertions.txt; do
     echo "Remove timestamp $stamp_file to force generation."
     continue
   fi
+  # If we fail... mp4 file is broken.
+  rm -f "$stamp_file"
 
   echo "==================================="
   echo "Will generate from $x."
   "$BIN_DIR/compose_overlays.sh" "$x"
   echo "Will generate $mp4_path."
   "$BIN_DIR/mp4_generator.sh" "insertions_$(basename "$(dirname "$x")").mlt" "$mp4_path"
-  touch "$stamp_file"
+  if [ "$?" == '0' ]; then
+    # It seems that MELT returns success when you ctrl-C it. :-(
+    echo "Success!!! Stamping file $stamp_file"
+    touch "$stamp_file"
+  else
+    echo "=========================================================================="
+    echo "======== FAIL $x ==="
+    echo "======== FAIL $mp4_path ==="
+    echo "=========================================================================="
+  fi
   echo "==================================="
   echo ''
 done
