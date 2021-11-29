@@ -3,6 +3,7 @@ ASSETS_DIR="$BIN_DIR/../assets"
 PNG_EXTRACTOR=("python3" "$BIN_DIR/png_extractor.py")
 
 
+declare last_position='0'
 declare -A global_entry_values=()
 declare -A entry_values=()
 function read_entry () {
@@ -23,6 +24,11 @@ function read_entry () {
       echo "== $count =="
       echo "New entry at position $next_position."
       next_position="$(len_to_mu "$next_position")"
+      if [ "$next_position" -lt "$last_position" ]; then
+        echo "Entry order problem! Last position was $(mu_to_len "$last_position")."
+        exit 1
+      fi
+      last_position="$next_position"
       local i
       entry_values=()
       for i in "${!global_entry_values[@]}"; do
