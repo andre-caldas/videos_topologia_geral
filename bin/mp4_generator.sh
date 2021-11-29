@@ -50,6 +50,13 @@ EOF
   sed -r -e '/<playlist /s,(<playlist ),\1autoclose="1" ,' |
   sed -r -e '/<property name="resource">[^#/][^<][^<][^<]/s,>,>'"$ORIGINAL_MLT_ABSDIR"'/,' > $TEMP_INPUT
 
+duration="$(sed -r '/id="black"/!d; /black/s/.*out="([^"]*)".*/\1/' "$ORIGINAL_MLT_FILE")"
+
+echo "======="
+echo "Will generate file: $duration."
+echo "That is... $(expr "$(len_to_mu "$duration")" / 17) frames."
+echo "======="
+
 date
 time $MELT "$TEMP_INPUT"
 
