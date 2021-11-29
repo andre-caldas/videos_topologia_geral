@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<mlt LC_NUMERIC="C" version="7.3.0" title="Shotcut version 21.10.24" producer="main_bin">
+<mlt LC_NUMERIC="C" version="7.2.0" title="Shotcut version 21.11.01" producer="main_bin">
   <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
   <producer id="producer0" in="00:00:00.000" out="03:59:59.983">
     <property name="length">04:00:00.000</property>
@@ -68,6 +68,19 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">06ede2955800f75cc2ec8b9bbf882f63</property>
   </producer>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">vinheta_static/topologia_geral_online.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-11-29T00:48:36</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">3895060f994b8e48e1cb5f596bcdae20</property>
+  </producer>
   <playlist id="main_bin" title="Shotcut version 21.10.24">
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
@@ -77,9 +90,10 @@
     <entry producer="producer2" in="00:00:00.000" out="00:00:03.983"/>
     <entry producer="producer3" in="00:00:00.000" out="00:00:03.983"/>
     <entry producer="producer4" in="00:00:00.000" out="00:00:03.983"/>
+    <entry producer="producer5" in="00:00:00.000" out="00:00:03.983"/>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:00:07.983">
-    <property name="length">00:00:08.000</property>
+  <producer id="black" in="00:00:00.000" out="00:00:11.983">
+    <property name="length">00:00:12.000</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -88,9 +102,9 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:00:07.983"/>
+    <entry producer="black" in="00:00:00.000" out="00:00:11.983"/>
   </playlist>
-  <producer id="producer5" in="00:00:00.000" out="03:59:59.983">
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.983">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">#FFDEDDDA</property>
@@ -105,10 +119,76 @@
   </producer>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V1</property>
-    <entry producer="producer5" in="00:00:00.000" out="00:00:07.983"/>
+    <property name="shotcut:name">V2</property>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:11.983"/>
   </playlist>
-  <producer id="producer6" in="00:00:00.000" out="03:59:59.983">
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">vinheta_static/topologia_geral_online.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-11-29T00:48:36</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">3895060f994b8e48e1cb5f596bcdae20</property>
+    <property name="shotcut:caption">topologia_geral_online.png</property>
+    <filter id="filter0" out="00:00:05.317">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">00:00:00.000=0;00:00:01.717=1</property>
+      <property name="shotcut:animIn">104</property>
+    </filter>
+    <filter id="filter1" out="00:00:05.317">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">11.5569 689 1030.61 385.793 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter2" out="00:00:05.317">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">00:00:05.117=1;00:00:05.317=0</property>
+      <property name="shotcut:animOut">13</property>
+    </filter>
+    <filter id="filter3" out="00:00:05.317">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.717=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">104</property>
+    </filter>
+    <filter id="filter4" out="00:00:05.317">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:05.117=0;00:00:05.317=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">13</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:00:06.667"/>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:05.317"/>
+  </playlist>
+  <producer id="producer8" in="00:00:00.000" out="03:59:59.983">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">vinheta_static/topologia_vinheta_fundo.png</property>
@@ -121,7 +201,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">8484b376b4acb1b814deba621de948c8</property>
     <property name="shotcut:caption">topologia_vinheta_fundo.png</property>
-    <filter id="filter3" out="00:00:07.983">
+    <filter id="filter5" out="00:00:07.983">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -135,7 +215,7 @@
       <property name="transition.threads">0</property>
       <property name="disable">0</property>
     </filter>
-    <filter id="filter4" out="00:00:07.983">
+    <filter id="filter6" out="00:00:07.983">
       <property name="start">1</property>
       <property name="level">1</property>
       <property name="mlt_service">brightness</property>
@@ -145,12 +225,12 @@
       <property name="disable">0</property>
     </filter>
   </producer>
-  <playlist id="playlist1">
+  <playlist id="playlist2">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V2</property>
-    <entry producer="producer6" in="00:00:00.000" out="00:00:07.983"/>
+    <property name="shotcut:name">V3</property>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:07.983"/>
   </playlist>
-  <producer id="producer7" in="00:00:00.000" out="03:59:59.983">
+  <producer id="producer9" in="00:00:00.000" out="03:59:59.983">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">vinheta_static/topologia_vinheta_titulo.png</property>
@@ -163,7 +243,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">06ede2955800f75cc2ec8b9bbf882f63</property>
     <property name="shotcut:caption">topologia_vinheta_titulo.png</property>
-    <filter id="filter5" out="00:00:07.983">
+    <filter id="filter7" out="00:00:07.983">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -177,12 +257,12 @@
       <property name="transition.threads">0</property>
     </filter>
   </producer>
-  <playlist id="playlist2">
+  <playlist id="playlist3">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V3</property>
-    <entry producer="producer7" in="00:00:00.000" out="00:00:07.983"/>
+    <property name="shotcut:name">V4</property>
+    <entry producer="producer9" in="00:00:00.000" out="00:00:07.983"/>
   </playlist>
-  <producer id="producer8" in="00:00:00.000" out="03:59:59.983">
+  <producer id="producer10" in="00:00:00.000" out="03:59:59.983">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">vinheta_static/topologia_vinheta_professor.png</property>
@@ -195,7 +275,7 @@
     <property name="xml">was here</property>
     <property name="shotcut:hash">16fc54ac1b0458e72937c57a28071ba9</property>
     <property name="shotcut:caption">topologia_vinheta_professor.png</property>
-    <filter id="filter6" out="00:00:07.983">
+    <filter id="filter8" out="00:00:07.983">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -210,12 +290,12 @@
       <property name="disable">0</property>
     </filter>
   </producer>
-  <playlist id="playlist3">
+  <playlist id="playlist4">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V4</property>
-    <entry producer="producer8" in="00:00:00.000" out="00:00:07.983"/>
+    <property name="shotcut:name">V5</property>
+    <entry producer="producer10" in="00:00:00.000" out="00:00:07.983"/>
   </playlist>
-  <producer id="producer9" in="00:00:00.000" out="03:59:59.983">
+  <producer id="producer11" in="00:00:00.000" out="03:59:59.983">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">vinheta_static/papito.svg</property>
@@ -229,7 +309,7 @@
     <property name="shotcut:hash">24c313bd35ae36447ae1ce8444f40447</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter7" out="00:00:07.983">
+    <filter id="filter9" out="00:00:07.983">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -244,22 +324,24 @@
       <property name="transition.fix_rotate_x">00:00:00.000=360;00:00:02.717=-360;00:00:06.000=-360;00:00:07.000=360</property>
     </filter>
   </producer>
-  <playlist id="playlist4">
+  <playlist id="playlist5">
     <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V5</property>
-    <entry producer="producer9" in="00:00:00.000" out="00:00:07.983"/>
+    <property name="shotcut:name">V6</property>
+    <entry producer="producer11" in="00:00:00.000" out="00:00:07.983"/>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:00:07.983">
+  <tractor id="tractor0" title="Shotcut version 21.11.01" in="00:00:00.000" out="00:00:11.983">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <property name="shotcut:scaleFactor">2.60961</property>
+    <property name="shotcut:trackHeight">30</property>
     <track producer="background"/>
     <track producer="playlist0"/>
     <track producer="playlist1"/>
     <track producer="playlist2"/>
     <track producer="playlist3"/>
     <track producer="playlist4"/>
+    <track producer="playlist5"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -268,72 +350,81 @@
       <property name="sum">1</property>
     </transition>
     <transition id="transition1">
-      <property name="a_track">0</property>
+      <property name="a_track">1</property>
       <property name="b_track">1</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="threads">0</property>
-      <property name="disable">1</property>
     </transition>
     <transition id="transition2">
-      <property name="a_track">0</property>
+      <property name="a_track">1</property>
       <property name="b_track">2</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
     </transition>
     <transition id="transition3">
-      <property name="a_track">1</property>
-      <property name="b_track">2</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="threads">0</property>
-      <property name="disable">0</property>
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
     </transition>
     <transition id="transition4">
-      <property name="a_track">0</property>
+      <property name="a_track">1</property>
       <property name="b_track">3</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
     </transition>
     <transition id="transition5">
-      <property name="a_track">1</property>
-      <property name="b_track">3</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="threads">0</property>
-      <property name="disable">0</property>
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
     </transition>
     <transition id="transition6">
-      <property name="a_track">0</property>
+      <property name="a_track">1</property>
       <property name="b_track">4</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
     </transition>
     <transition id="transition7">
-      <property name="a_track">1</property>
-      <property name="b_track">4</property>
-      <property name="version">0.9</property>
-      <property name="mlt_service">frei0r.cairoblend</property>
-      <property name="threads">0</property>
-      <property name="disable">0</property>
-    </transition>
-    <transition id="transition8">
       <property name="a_track">0</property>
       <property name="b_track">5</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition9">
+    <transition id="transition8">
       <property name="a_track">1</property>
       <property name="b_track">5</property>
       <property name="version">0.9</property>
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="threads">0</property>
-      <property name="disable">0</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">0</property>
+      <property name="b_track">6</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition10">
+      <property name="a_track">1</property>
+      <property name="b_track">6</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+    </transition>
+    <transition id="transition11">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
     </transition>
   </tractor>
 </mlt>
