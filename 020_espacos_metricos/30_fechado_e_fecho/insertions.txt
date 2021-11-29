@@ -28,11 +28,8 @@ template = topico
 texto_html = se $V \in \mathcal{V}(a)$...
 
 == 04:22.000 ==
-template = topico
+template = topico_2
 texto_html = então, $V \cup B$ tem interseção com $B$
-
-== 04:24.000 ==
-template = topico
 texto_html = claro... se $B$ não for vazio!
 
 == 05:52.000 ==
@@ -44,6 +41,7 @@ template = topico_3
 texto_html = vai perceber que $a \in \overline{B}$ exatamente quando
 texto_html = $\mathcal{V}(a)|_B$ for um filtro em $B$
 texto_html = que, aliás, converge para $a$ como se fosse uma sequência em $B$ convergindo para $a$!
+javascript = lower();
 
 == 06:15.000 ==
 template = topico
@@ -69,8 +67,9 @@ texto_html = poderiamos ter usado $B^c$...
 texto_html = ... ao invés de termos tomado um $V$
 
 == 09:53.000 ==
-template = topico
-texto_html = $D^c$
+template = topico_2
+texto_html = o mesmo vale para $D^c$...
+texto_html = ... no lugar de $W$
 
 == 10:13.000 ==
 template = topico_2
@@ -90,9 +89,18 @@ template = topico
 texto_html = NÃO significa que os conjuntos que não são abertos são fechados!!!
 javascript = image_above('texto', 'forbidden');
 
-== 15:50.000 ==
+== 14:31.000 ==
+template = topico
+texto_html = também NÃO significa que um conjunto não pode ser aberto e fechado ao mesmo tempo!!!
+javascript = image_above('texto', 'forbidden');
+
+== 15:49.000 ==
 template = topico
 texto_html = $F^c \in \mathcal{V}(a)$
+
+== 16:33.000 ==
+template = topico
+texto_html = o próprio $F^c$!!!
 
 == 16:44.000 ==
 template = topico
@@ -106,6 +114,11 @@ texto_html = $(F \cup K)^c = F^c \cap K^c$
 template = topico_2
 texto_html = $\overline{F} = \overline{\overline{F}}$
 texto_html = $\overline{F}$ é igual ao seu próprio fecho (é fechado!)
+
+== 22:44.000 ==
+template = topico
+texto_html = Argh! Que quadrado horrível!
+javascript = lower(); append_image('texto', 'nausea_monster');
 
 == 23:00.000 ==
 template = topico

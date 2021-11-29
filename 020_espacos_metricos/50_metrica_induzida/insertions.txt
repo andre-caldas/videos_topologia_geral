@@ -15,6 +15,10 @@ template = vinheta
 template = parte
 parte = Métrica induzida
 
+== 01:45.000 ==
+template = topico
+texto_html = como indo para $X$!
+
 == 02:04.000 ==
 template = topico
 texto_html = iguais, porém diferentes...

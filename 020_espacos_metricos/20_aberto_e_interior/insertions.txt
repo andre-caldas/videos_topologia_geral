@@ -192,8 +192,8 @@ template = topico
 texto_html = moleza!
 javascript = image_above('texto', 'wink');
 
-== 37:10.000 ==
+== 21:15.000 ==
 template = topico
 texto_html = Depois do <i>intervalo</i> tem mais! :-)
-javascript = prepend_image('texto', 'fun', 'flipped'); append_image('texto', 'fun');
+javascript = lower(); prepend_image('texto', 'fun', 'flipped'); append_image('texto', 'fun');
 
