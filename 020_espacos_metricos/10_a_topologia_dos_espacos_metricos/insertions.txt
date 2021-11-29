@@ -6,7 +6,7 @@ aula = Espaços métricos
 == 03.000 ==
 template = vinheta
 
-== 12.000 ==
+== 15.000 ==
 template = parte
 parte = A topologia dos espaços métricos
 
