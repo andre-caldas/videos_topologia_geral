@@ -17,10 +17,19 @@ fi
 OUTPUT_DIR="${2:-~/Vídeos}"
 mkdir -p "$OUTPUT_DIR"
 
+exclude_map=($EXCLUDE_MAP)
+
 cd "$INPUT_DIR"
 # Only relative bindir... I am tired!!!
 BIN_DIR="../$BIN_DIR"
+count="-1"
 for x in */insertions.txt; do
+  count="$(("$count" + 1))"
+  if [ 'x' == "${exclude_map["$count"]}" -o 'X' == "${exclude_map["$count"]}" ]; then
+    echo "===> Ignoring file $x."
+    continue
+  fi
+
   echo "==================================="
   echo "Will generate $x."
   "$BIN_DIR/compose_overlays.sh" "$x"
