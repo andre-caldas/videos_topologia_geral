@@ -48,7 +48,7 @@ function _read_entry_sub () {
       break
     fi
     echo "$tag = $val"
-    if [ '' == "${array["$tag"]}" ]; then
+    if [ ! -v "array["$tag"]" ]; then
       array["$tag"]="$val"
     else
       if [ '*' != "${array["$tag"]}" ]; then
