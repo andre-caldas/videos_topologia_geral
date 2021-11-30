@@ -13,8 +13,10 @@ if [ '' == "$INPUT_DIR" ]; then
   echo 'Required argument!' >&2
   exit 1
 fi
+DAY_NAME="$(basename "$(dirname "$INPUT_DIR/x")")"
 
 OUTPUT_DIR="${2:-"$HOME/Vídeos"}"
+OUTPUT_DIR="$OUTPUT_DIR/$CRF/$DAY_NAME"
 mkdir -p "$OUTPUT_DIR"
 
 exclude_map=($EXCLUDE_MAP)

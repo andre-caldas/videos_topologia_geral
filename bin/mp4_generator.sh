@@ -17,7 +17,7 @@ function absolute_path () {
   local result="$(sed "s|^~/|$HOME/|"<<<"$1")"
   local first_char="$(cut -b 1 <<<"$result")"
   if [ '/' != "$first_char" ]; then
-    result="$(dirname "$PWD/$result/")"
+    result="$(dirname "$PWD/$result/x")"
   fi
   echo "$result"
 }
@@ -36,9 +36,10 @@ trap "rm -f '$TEMP_INPUT'" EXIT
 trap "rm -f '$TEMP_INPUT'" KILL
 
 MELT="melt-7"
+CRF=${CRF:-23}
 
 INSERT_STRING="$(cat <<EOF
-  <consumer deinterlace_method="yadif-nospatial" threads="0" vcodec="libx264" acodec="aac" ab="384k" ar="48000" g="300" rescale="bilinear" frame_rate_num="30000000" target="$OUTPUT_VIDEO_ABSPATH" preset="fast" mlt_service="avformat" crf="30" bf="3" height="720" width="1280" movflags="+faststart" top_field_first="2" channels="2" frame_rate_den="1000000" real_time="-4" f="mp4"/>
+  <consumer deinterlace_method="yadif-nospatial" threads="0" vcodec="libx264" acodec="aac" ab="384k" ar="48000" g="300" rescale="bilinear" frame_rate_num="30000000" target="$OUTPUT_VIDEO_ABSPATH" preset="fast" mlt_service="avformat" crf="$CRF" bf="3" height="720" width="1280" movflags="+faststart" top_field_first="2" channels="2" frame_rate_den="1000000" real_time="-4" f="mp4"/>
 EOF
 )"
 
