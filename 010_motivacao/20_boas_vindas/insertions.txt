@@ -1,0 +1,38 @@
+boas_vindas.mlt
+
+== globals ==
+aula = Apresentação do curso
+
+== 15.000 ==
+template = parte
+parte = Boas vindas (professor André Caldas)
+
+== 38.600 ==
+template = vinheta
+
+== 47.500 ==
+template = topico_2
+texto_html = 
+texto_html = 
+javascript = image_above('texto_1', 'fire_engine'); image_above('texto_2', 'fun');
+
+== 01:26.000 ==
+template = topico_2
+texto_html = 
+texto_html = 
+javascript = image_above('texto_1', 'fun'); image_above('texto_2', 'truck');
+
+== 02:48.000 ==
+template = topico
+texto_html = a tal que arde!!!
+javascript = image_above('texto', 'chilli');
+
+== 04:55.000 ==
+template = topico
+texto_html = acho que só 45
+
+== 08:25.000 ==
+template = topico
+texto_html = 
+javascript = image_above('texto', 'fun');
+
