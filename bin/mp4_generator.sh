@@ -27,6 +27,16 @@ ORIGINAL_MLT_ABSDIR="$(absolute_path $(dirname "$ORIGINAL_MLT_FILE"))"
 
 auto_filename="$(basename "$ORIGINAL_MLT_FILE" .mlt).mp4"
 OUTPUT_FILENAME="${2:-"$auto_filename"}"
+if [ -e "$OUTPUT_FILENAME" ]; then
+  echo "File already exists!!! $OUTPUT_FILENAME"
+  exit -n "Overwrite? 'yes/no': "
+  read ans
+  if [ 'yes' != "$ans" ]; then
+    echo "Aborting..."
+    sleep 1 # So the user can read before next clip processing starts.
+    exit 1
+  fi
+fi
 
 OUTPUT_DIRECTORY="$(dirname "$OUTPUT_FILENAME")"
 OUTPUT_ABSDIR="$(absolute_path "$OUTPUT_DIRECTORY")"
