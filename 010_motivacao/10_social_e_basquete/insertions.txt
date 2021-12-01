@@ -29,8 +29,11 @@ texto_html = Argh!!!
 javascript = image_above('texto', 'nausea_monster');
 
 == 03:55.000 ==
-template = topico_2
+template = topico
 texto_html = bolas: $\mathcal{B}_\varepsilon(x)$
+
+== 04:49.000 ==
+template = topico
 texto_html = norma: $\| \cdot \|$
 
 == 05:00.000 ==
@@ -50,11 +53,8 @@ template = topico
 texto_html = <span style="font-size: 150%;"><b>vizinhanças</b></span>
 
 == 16:31.000 ==
-template = topico
+template = topico_2
 texto_html = Uma <b>família</b> de vizinhanças do ponto $a$.
-
-== 16:34.000 ==
-template = topico
 texto_html = Uma <b>família</b><br />é um conjunto de conjuntos.
 
 == 19:46.000 ==
@@ -81,10 +81,11 @@ javascript = image_above('texto_2', 'net');
 template = topico
 texto_html = $x$ <i>próximo</i> de $D$ $\Leftrightarrow$ $x \in \overline{D}$
 
-== 23:49.000 ==
-template = topico_2
+== 23:55.000 ==
+template = topico_3
 texto_html = uma vizinhança $V$, do ponto $p\ldots$
 texto_html = $V \in \mathcal{V}(p)$
+texto_html = $p$ está $V$-longe do intervalo $(0,1)$
 
 == 27:30.000 ==
 template = topico
