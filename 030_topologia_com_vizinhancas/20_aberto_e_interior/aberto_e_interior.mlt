@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<mlt LC_NUMERIC="C.UTF-8" version="7.1.0" title="Shotcut version 21.10.24" producer="main_bin">
+<mlt LC_NUMERIC="C.UTF-8" version="7.2.0" title="Shotcut version 21.11.01" producer="main_bin">
   <profile description="HD 1080p 60 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
   <producer id="producer5" title="MVI_1399.MP4" in="00:00:00.000" out="00:01:15.467">
     <property name="length">00:01:15.483</property>
@@ -748,31 +748,24 @@
     <property name="shotcut:hash">2d1d6d15b32e50001cf642923a832b80</property>
     <property name="ignore_points">0</property>
   </producer>
-  <tractor id="tractor19" in="00:00:00.000" out="00:00:03.550">
+  <tractor id="tractor19" in="00:00:00.000" out="00:00:00.750">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="producer31" in="00:00:45.183" out="00:00:48.733"/>
-    <track producer="producer32" in="00:00:07.283" out="00:00:10.833"/>
-    <transition id="transition36" out="00:00:03.550">
+    <track producer="producer31" in="00:00:46.517" out="00:00:47.267"/>
+    <track producer="producer32" in="00:00:08.617" out="00:00:09.367"/>
+    <transition id="transition36" out="00:00:00.750">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
       <property name="factory">loader</property>
       <property name="mlt_service">luma</property>
       <property name="alpha_over">1</property>
     </transition>
-    <transition id="transition37" out="00:00:03.550">
+    <transition id="transition37" out="00:00:00.750">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
       <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
     </transition>
-    <filter id="filter0" out="00:00:03.883">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">muteVolume</property>
-      <property name="gain">0</property>
-    </filter>
   </tractor>
   <producer id="producer33" title="MVI_1405.MP4" in="00:00:00.000" out="00:01:24.467">
     <property name="length">00:01:24.483</property>
@@ -963,9 +956,9 @@
     <transition id="transition47" out="00:00:00.767">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer38" title="MVI_1411.MP4" in="00:00:00.000" out="00:03:39.400">
@@ -992,9 +985,9 @@
     <transition id="transition49" out="00:00:00.733">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer39" title="MVI_1411.MP4" in="00:00:00.000" out="00:03:39.400">
@@ -1021,9 +1014,9 @@
     <transition id="transition51" out="00:00:00.633">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <playlist id="playlist0">
@@ -1065,9 +1058,9 @@
     <entry producer="tractor17" in="00:00:00.000" out="00:00:00.550"/>
     <entry producer="producer30" in="00:00:08.567" out="00:00:22.283"/>
     <entry producer="tractor18" in="00:00:00.000" out="00:00:00.300"/>
-    <entry producer="producer31" in="00:00:36.717" out="00:00:45.167"/>
-    <entry producer="tractor19" in="00:00:00.000" out="00:00:03.550"/>
-    <entry producer="producer32" in="00:00:10.850" out="00:00:44.200"/>
+    <entry producer="producer31" in="00:00:36.717" out="00:00:46.500"/>
+    <entry producer="tractor19" in="00:00:00.000" out="00:00:00.750"/>
+    <entry producer="producer32" in="00:00:09.383" out="00:00:44.200"/>
     <entry producer="tractor20" in="00:00:00.000" out="00:00:00.200"/>
     <entry producer="producer33" in="00:00:54.233" out="00:01:10.483"/>
     <entry producer="tractor21" in="00:00:00.000" out="00:00:00.350"/>
@@ -1224,11 +1217,11 @@
     <property name="shotcut:name">V3</property>
     <blank length="00:00:00.017"/>
   </playlist>
-  <tractor id="tractor29" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:22:44.667">
+  <tractor id="tractor29" title="Shotcut version 21.11.01" in="00:00:00.000" out="00:22:44.667">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
-    <property name="shotcut:scaleFactor">6.52111</property>
+    <property name="shotcut:scaleFactor">3.27313</property>
     <property name="shotcut:trackHeight">30</property>
     <track producer="background"/>
     <track producer="playlist0"/>

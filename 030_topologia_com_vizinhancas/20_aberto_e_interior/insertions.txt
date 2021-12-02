@@ -1,0 +1,38 @@
+aberto_e_interior.mlt
+
+== globals ==
+aula = Topologia com vizinhanças
+
+== 05.000 ==
+template = vinheta
+
+== 35.000 ==
+template = parte
+parte = Operação de interior
+
+== 10:00.000 ==
+template = topico_3
+texto_html = para todo $x \in X$,
+texto_html = $X \in \mathcal{V}(x)$
+texto_html = ou seja, $X$ é vizinhança de todos (os seus) pontos
+
+== 13:36.000 ==
+template = topico
+texto_html = 
+javascript = image_above('texto', 'mage');
+
+== 19:17.000 ==
+template = topico_2
+texto_html = e a diagonal diz que...
+texto_html = $\mathring{D}$ é vizinhança de todos os seus pontos!
+
+== 20:45.000 ==
+template = topico
+texto_html = $$\begin{align*} \mathrm{int}(A \cap B) &\subset \mathring{A} \\ \mathrm{int}(A \cap B) &\subset \mathring{B}$$
+javascript = lower();
+
+== 22:30.000 ==
+template = topico
+texto_html = intervalo!!!! :-)
+javascript = lower(); image_above('texto', 'fun');
+

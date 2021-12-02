@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<mlt LC_NUMERIC="C" version="7.1.0" title="Shotcut version 21.10.24" producer="main_bin">
+<mlt LC_NUMERIC="C" version="7.2.0" title="Shotcut version 21.11.01" producer="main_bin">
   <profile description="HD 1080p 60 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
   <producer id="tractor0" title="MVI_1315.MP4" in="00:00:00.000" out="00:01:59.500">
     <property name="length">00:01:59.517</property>
@@ -156,8 +156,8 @@
     <entry producer="producer11" in="00:00:00.000" out="00:14:28.733"/>
     <entry producer="producer10" in="00:00:00.000" out="00:05:52.050"/>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:53:13.600">
-    <property name="length">00:53:13.617</property>
+  <producer id="black" in="00:00:00.000" out="00:53:03.983">
+    <property name="length">00:53:04.000</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -166,7 +166,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:53:13.600"/>
+    <entry producer="black" in="00:00:00.000" out="00:53:03.983"/>
   </playlist>
   <producer id="producer12" title="MVI_1315.MP4" in="00:00:00.000" out="00:01:59.500">
     <property name="length">00:01:59.517</property>
@@ -353,9 +353,9 @@
     <transition id="transition11" out="00:00:00.800">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer19" title="MVI_1318.MP4" in="00:00:00.000" out="00:03:32.200">
@@ -383,9 +383,9 @@
     <transition id="transition13" out="00:00:00.667">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer20" title="MVI_1319.MP4" in="00:00:00.000" out="00:05:03.383">
@@ -413,9 +413,9 @@
     <transition id="transition15" out="00:00:00.383">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer21" title="MVI_1319.MP4" in="00:00:00.000" out="00:05:03.383">
@@ -443,9 +443,9 @@
     <transition id="transition17" out="00:00:00.367">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer22" title="MVI_1319.MP4" in="00:00:00.000" out="00:05:03.383">
@@ -473,9 +473,9 @@
     <transition id="transition19" out="00:00:00.500">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer23" title="MVI_1320.MP4" in="00:00:00.000" out="00:03:13.800">
@@ -503,9 +503,9 @@
     <transition id="transition21" out="00:00:00.633">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer24" title="MVI_1320.MP4" in="00:00:00.000" out="00:03:13.800">
@@ -533,9 +533,9 @@
     <transition id="transition23" out="00:00:00.283">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer25" title="MVI_1321.MP4" in="00:00:00.000" out="00:01:39.350">
@@ -563,9 +563,9 @@
     <transition id="transition25" out="00:00:00.633">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer26" title="MVI_1323.MP4" in="00:00:00.000" out="00:02:45.933">
@@ -593,9 +593,9 @@
     <transition id="transition27" out="00:00:00.700">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer27" title="MVI_1324.MP4" in="00:00:00.000" out="00:08:32.483">
@@ -622,9 +622,9 @@
     <transition id="transition29" out="00:00:00.883">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer28" title="MVI_1324.MP4" in="00:00:00.000" out="00:08:32.483">
@@ -651,9 +651,9 @@
     <transition id="transition31" out="00:00:00.500">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer29" title="MVI_1324.MP4" in="00:00:00.000" out="00:08:32.483">
@@ -680,9 +680,9 @@
     <transition id="transition33" out="00:00:00.583">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer30" title="MVI_1324.MP4" in="00:00:00.000" out="00:08:32.483">
@@ -709,9 +709,9 @@
     <transition id="transition35" out="00:00:00.550">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer31" title="MVI_1325.MP4" in="00:00:00.000" out="00:10:07.600">
@@ -738,9 +738,9 @@
     <transition id="transition37" out="00:00:00.750">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer32" title="MVI_1325.MP4" in="00:00:00.000" out="00:10:07.600">
@@ -767,9 +767,9 @@
     <transition id="transition39" out="00:00:00.333">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer33" title="MVI_1326.MP4" in="00:00:00.000" out="00:06:36.150">
@@ -796,9 +796,9 @@
     <transition id="transition41" out="00:00:00.950">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer34" title="MVI_1326.MP4" in="00:00:00.000" out="00:06:36.150">
@@ -835,9 +835,9 @@
     <transition id="transition43" out="00:00:00.250">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer36" title="MVI_1326.MP4" in="00:00:00.000" out="00:06:36.150">
@@ -864,9 +864,9 @@
     <transition id="transition45" out="00:00:00.467">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer37" title="MVI_1328.MP4" in="00:00:00.000" out="00:14:28.733">
@@ -893,9 +893,9 @@
     <transition id="transition47" out="00:00:00.833">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer38" title="MVI_1328.MP4" in="00:00:00.000" out="00:14:28.733">
@@ -922,9 +922,9 @@
     <transition id="transition49" out="00:00:00.317">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer39" title="MVI_1328.MP4" in="00:00:00.000" out="00:14:28.733">
@@ -951,9 +951,9 @@
     <transition id="transition51" out="00:00:00.517">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer40" title="MVI_1328.MP4" in="00:00:00.000" out="00:14:28.733">
@@ -980,9 +980,9 @@
     <transition id="transition53" out="00:00:00.133">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer41" title="MVI_1328.MP4" in="00:00:00.000" out="00:14:28.733">
@@ -1009,9 +1009,9 @@
     <transition id="transition55" out="00:00:00.183">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer42" title="MVI_1328.MP4" in="00:00:00.000" out="00:14:28.733">
@@ -1038,9 +1038,9 @@
     <transition id="transition57" out="00:00:00.567">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer43" title="MVI_1327.MP4" in="00:00:00.000" out="00:05:52.050">
@@ -1067,9 +1067,9 @@
     <transition id="transition59" out="00:00:00.883">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <producer id="producer44" title="MVI_1327.MP4" in="00:00:00.000" out="00:05:52.050">
@@ -1096,15 +1096,15 @@
     <transition id="transition61" out="00:00:00.367">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="producer12" in="00:00:00.000" out="00:01:51.750"/>
+    <entry producer="producer12" in="00:00:09.617" out="00:01:51.750"/>
     <entry producer="tractor1" in="00:00:00.000" out="00:00:00.400"/>
     <entry producer="producer13" in="00:00:11.717" out="00:00:17.000"/>
     <entry producer="tractor2" in="00:00:00.000" out="00:00:00.350"/>
@@ -1169,9 +1169,9 @@
     <entry producer="tractor31" in="00:00:00.000" out="00:00:00.367"/>
     <entry producer="producer44" in="00:01:27.117" out="00:05:40.667"/>
   </playlist>
-  <tractor id="tractor32" title="Shotcut version 21.10.24" in="00:00:00.000" out="00:53:13.600">
+  <tractor id="tractor32" title="Shotcut version 21.11.01" in="00:00:00.000" out="00:53:03.983">
     <property name="shotcut">1</property>
-    <property name="shotcut:scaleFactor">13.9211</property>
+    <property name="shotcut:scaleFactor">0.23892</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
     <track producer="background"/>

@@ -15,12 +15,13 @@ template = topico
 texto_html = os espaços <emph>MÉTRICOS</emph>
 
 == 02:40.000 ==
-template = topico
-texto_html = $\forall \varepsilon > 0,\, \exists n \in \mathbb{N}^*$,<br>tal que $\displaystyle 0 < \frac{1}{n} < \varepsilon$
+template = topico_2
+texto_html = $\forall \varepsilon > 0,\, \exists n \in \mathbb{N}^*$,
+texto_html = tal que $\displaystyle 0 < \frac{1}{n} < \varepsilon$
 
 == 02:52.000 ==
 template = topico
-texto_html = $\mathcal{V}(a) = \{V \subset X: \exists n \in \mathbb{N}^*,\, B_{1/n}(a) \subset V \}$
+texto_html = $\mathcal{V}(a) = \{V \subset X: \exists n \in \mathbb{N}^*,\, B_{\frac{1}{n}}(a) \subset V \}$
 
 == 03:21.000 ==
 template = topico
@@ -53,38 +54,39 @@ parte = Continuidade com sequências
 template = topico
 texto_html = $f(x_n) \rightarrow f(a)$?
 
-== 15:07.000 ==
-template = topico
-texto_html = eventualmente, $x_n \in f^{-1}(V)$
-
 == 16:00.000 ==
-template = topico
-texto_html = <emph>SEMPRE</emph>... continuidade $\Rightarrow$ continuidade sequencial
-
-== 16:05.000 ==
 template = topico_2
-texto_html = continuidade sequencia $\Rightarrow$ continuidade: NEM SEMPRE
-texto_html = no caso dos espaços métricos... VALE
-javascript = prepend_image('texto_1', 'forbidden'); prepend_image('texto_2', 'math_girl');
+texto_html = <emph>SEMPRE</emph>...
+texto_html = continuidade $\Rightarrow$ continuidade sequencial
+javascript = prepend_image('texto_2', 'math_girl');
+
+== 16:08.000 ==
+template = topico_2
+texto_html = <emph>NEM SEMPRE</emph>...
+texto_html = continuidade sequencial $\Rightarrow$ continuidade
+javascript = lower(); prepend_image('texto_2', 'forbidden');
 
 == 17:35.000 ==
 template = topico
-texto_html = é só tomar $x_n \in B_{1/n}(a)$
+texto_html = é só tomar $x_n \in B_{\frac{1}{n}}(a)$
 
 == 19:16.000 ==
 template = topico
-texto_html = $B_{1/n} \setminus f^{-1}(V) \neq \emtpyset$
+texto_html = $B_{\frac{1}{n}}(a) \setminus f^{-1}(V) \neq \emptyset$
 
 == 19:50.000 ==
 template = topico
-texto_html = $x_n \in B_{1/n} \setminus f^{-1}(V) \neq \emtpyset$
+texto_html = $x_n \in B_{\frac{1}{n}}(a) \setminus f^{-1}(V) \neq \emptyset$
 
 == 20:14.000 ==
-template = topico
-texto_html = $x_n \in B_{1/n}$ tal que $f(x_n) \not \in V$
+template = topico_2
+texto_html = $x_n \in B_{\frac{1}{n}}(a)$
+texto_html = $f(x_n) \not \in V$
 
-== 22:15.000 ==
-template = topico
-texto_html = um intervalo e depois só mais uma "coisinha" de nada
-javascript = prepend_image('texto', 'papito'); append_image('texto', 'smiling_worm');
+== 22:13.000 ==
+template = topico_3
+texto_html = como já terminou o horário de aula,
+texto_html = o próximo vídeo.... só mais uma "coisinha" de nada...
+texto_html = é atividade extraclasse. :-)
+javascript = prepend_image('texto_1', 'papito'); append_image('texto_3', 'smiling_worm');
 

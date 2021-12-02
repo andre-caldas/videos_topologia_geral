@@ -1,0 +1,120 @@
+propriedades.mlt
+
+== globals ==
+aula = Topologia com vizinhanças
+
+== 15.000 ==
+template = vinheta
+
+== 30.000 ==
+template = topico_2
+texto_html = no caso do quadro...
+texto_html = ... vizinhanças de $a$ :-)
+
+== 41.000 ==
+template = topico_3
+texto_html = $\mathcal{V}(a) = \{V \subset X: \exists B \in \mathcal{B}(a),\, B \subset V\}$
+texto_html = uma vizinhança de $a$ é qualquer conjunto...
+texto_html = ... que contém uma bola centrada em $a$
+
+== 01:16.000 ==
+template = parte
+parte = Propriedades de $\mathcal{V}(a)$
+
+== 04:25.000 ==
+template = topico_3
+texto_html = imagine duas <emph>topologias</emph> diferentes em $X$
+texto_html = em uma, $\mathcal{V}(a) = \mathcal{V}_a$
+texto_html = na outra, $\mathcal{V}(a) = \mathcal{W}_a$
+
+== 05:07.000 ==
+template = topico_2
+texto_html = se convergir na topologia onde $\mathcal{V}(a) = \mathcal{W}_a$
+texto_html = então converge na topologia onde $\mathcal{V}(a) = \mathcal{V}_a$
+
+== 06:00.000 ==
+template = topico
+texto_html = moleza!!!
+javascript = prepend_image('texto', 'math_girl');
+
+== 07:13.000 ==
+template = topico
+texto_html = nada?
+javascript = image_above('texto', 'doubt');
+
+== 09:07.000 ==
+template = topico
+texto_html = $a$ é um ponto isolado!
+javascript = image_above('texto', 'isolated');
+
+== 10:31.000 ==
+template = topico
+texto_html = enfatizando: $a$ é um ponto isolado!
+javascript = lower(); image_above('texto', 'isolated');
+
+== 11:56.000 ==
+template = topico_3
+texto_html = eu tenho dito... topologia isso... topologia aquilo...
+texto_html = ... mas na verdade, ainda não definimos
+texto_html = o que é uma <emph>topologia</emph>!
+javascript = prepend_image('texto_1', 'papito');
+
+== 12:23.000 ==
+template = topico
+texto_html = inventando...
+javascript = image_above('texto', 'science_girl');
+
+== 15:00.000 ==
+template = topico_3
+texto_html = se, eventualmente $x_n \in V \subset W$,
+texto_html = então, eventualmente $x_n \in W$
+texto_html = claro... :-)
+
+== 15:20.000 ==
+template = topico_3
+texto_html = o que é uma vizinhança?
+texto_html = é qualquer conjunto que contém uma vizinhança!!
+texto_html = 
+javascript = prepend_image('texto_1', 'math_girl'); prepend_image('texto_2', 'owl_calculator'); image_above('texto_3', 'doubt');
+
+== 15:31.000 ==
+template = topico_2
+texto_html = tome $\varepsilon > 0$
+texto_html = você consegue $\delta > 0$...
+
+== 15:45.000 ==
+template = topico_3
+texto_html = $f^{-1}(B_\varepsilon(f(a))) \supset B_\delta(a)$
+texto_html = ou seja, $f^{-1}(B_\varepsilon(f(a)))$...
+texto_html = <emph>contém</emph> uma vizinhança de $a$
+
+== 15:53.000 ==
+template = topico_3
+texto_html = ou seja,
+texto_html = $f^{-1}(B_\varepsilon(f(a)))$...
+texto_html = <emph style="font-size: 120%;">É</emph> uma vizinhança de $a$
+
+== 16:33.000 ==
+template = topico_2
+texto_html = Atenção!
+texto_html = Não é a mesma coisa que $\mathcal{V} \neq \{\emptyset\}$
+javascript = prepend_image('texto_1', 'attention'); prepend_image('texto_2', 'forbidden');
+
+== 27:06.000 ==
+template = topico_3
+texto_html = é como se fossem sequências
+texto_html = indexadas por um conjunto
+texto_html = que não precisa ser $\mathbb{N}$
+javascript = image_above('texto_2', 'net');
+
+== 44:31.000 ==
+template = topico_2
+texto_html = com redes, dá!!! :-)
+texto_html = não vamos aprender redes nesse curso
+javascript = image_above('texto_1', 'net');
+
+== 52:40.000 ==
+template = topico
+texto_html = intervalo!!!
+javascript = prepend_image('texto', 'net');
+

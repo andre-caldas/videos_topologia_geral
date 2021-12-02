@@ -29,7 +29,7 @@ texto_html = $d(a,a) = 0$
 == 02:36.000 ==
 template = topico_3
 texto_html = por exemplo,
-texto_html = se $\forall n \in \mathbb{N}^*\,quad\| \vec{v} \| < \frac{1}{n}$,
+texto_html = se $\forall n \in \mathbb{N}^*\,\quad\| \vec{v} \| < \frac{1}{n}$,
 texto_html = então $\vec{v} = \vec{0}$
 javascript = lower();
 
@@ -60,7 +60,7 @@ texto_html = Portanto,<br>$a \in B_\varepsilon(c) \Rightarrow b \in B_\varepsilo
 
 == 08:14.000 ==
 template = topico
-texto_html = $\forall a,\, d(a,a) = 0$
+texto_html = $\forall a \in X,\, d(a,a) = 0$
 javascript = lower();
 
 == 08:47.000 ==
@@ -94,19 +94,6 @@ texto_html = um aberto é vizinhança de todos os seus pontos
 == 13:40.000 ==
 template = topico
 texto_html = Vamos acabar com o $\varepsilon$!!! :-)
-
-== 13:46.000 ==
-template = topico
-texto_html = vizinhança de todos os seus pontos...
-
-== 13:50.000 ==
-template = topico
-texto_html = se $a \in A$, então $A$ é vizinhança de $a$...
-javascript = lower();
-
-== 13:56.000 ==
-template = topico
-texto_html = $a \in A \Rightarrow A \in \mathcal{V}(a)$
 
 == 14:58.000 ==
 template = parte
@@ -160,7 +147,7 @@ texto_html = $x \in B_\eta(b) \Rightarrow d(b,c) < \eta$
 
 == 24:25.000 ==
 template = topico
-texto_html = abra cadabra...
+texto_html = 
 javascript = lower(); image_above( 'texto', 'mage');
 
 == 24:37.000 ==
@@ -176,18 +163,6 @@ template = topico_3
 texto_html = sem espaços métricos...
 texto_html = se tivéssemos uma família de vizinhanças de $a$: $\mathcal{V}(a)$...
 texto_html = $X$ é vizinahnça de $a$ $\Rightarrow$ $\mathcal{V}(a) \neq \emptyset$ 
-
-== 29:58.000 ==
-template = topico_3
-texto_html = $a \in \bigcup A_\lambda \Rightarrow \exists \gamma \in \Lambda$
-texto_html = então, $A_\gamma \in \mathcal{V}(a)$
-texto_html = então, $\bigcup A_\lambda \in \mathcal{V}(a)$
-javascript = lower();
-
-== 30:04.000 ==
-template = topico
-texto_html = então, $\bigcup A_\lambda \in \mathcal{V}(a)$
-javascript = lower();
 
 == 30:51.000 ==
 template = topico

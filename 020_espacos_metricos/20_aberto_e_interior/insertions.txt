@@ -44,10 +44,6 @@ texto_html = em geral, $\mathring{D} \subset D$...
 texto_html = ... mas quando o conjunto $D$ é aberto...
 texto_html = $D = \mathring{D}$
 
-== 03:40.000 ==
-template = topico
-texto_html = $D$ é aberto $\Leftrightarrow$ $D = \mathring{D}$
-
 == 04:15.000 ==
 template = topico
 texto_html = sempre vale que $\mathring{D} \subset D$
@@ -74,17 +70,16 @@ template = topico_2
 texto_html = $\mathring{D} = \{x \in {\color{blue} D}: D \in \mathcal{V}(x) \}$
 texto_html = $\mathring{D} = \{x \in {\color{red} X}: D \in \mathcal{V}(x) \}$
 
-== 06:12.000 ==
-template = topico
+== 06:13.000 ==
+template = topico_2
 texto_html = espaços métricos: $a \in B_\varepsilon(a)$
-
-== 06:15.000 ==
-template = topico
 texto_html = no caso de espaços <span class="striked">vetoriais</span> topológicos
 
-== 06:23.000 ==
-template = topico
+== 06:21.000 ==
+template = topico_2
+texto_html = $D \in \mathcal{V}(x) \Rightarrow x \in D$
 texto_html = a definição de <emph>sistema de vizinhanças</emph> vai exigir isso
+javascript = lower();
 
 == 06:47.000 ==
 template = topico_2
@@ -119,16 +114,17 @@ javascript = lower(); prepend_image('texto', 'happy_robot');
 
 == 12:57.000 ==
 template = topico_2
-texto_html = $B \subset D$,  e $B$ é vizinhança de todos os seus pontos
-texto_html = então, $D$ também é vizinhança de todos os pontos de $B$
+texto_html = $B$ é vizinhança de todos os seus pontos
+texto_html = $D$ também é, dos pontos de $B$
 
 == 13:09.000 ==
 template = topico
 texto_html = $B \subset \mathring{D}$
 
 == 13:17.000 ==
-template = topico
-texto_html = por conter $B$, $\mathring{D} \in \mathcal{V}(x)$
+template = topico_2
+texto_html = por conter $B$,
+texto_html = $\mathring{D} \in \mathcal{V}(x)$
 
 == 14:50.000 ==
 template = topico_3
@@ -148,19 +144,25 @@ texto_html = $\tau = \mathscr{Im}(\mathrm{int})$
 == 16:59.000 ==
 template = topico_3
 texto_html = seguindo a mesma lógica que usamos pra bola
-texto_html = $A \in \tau$, $A \subset D$
+texto_html = se $A$ é aberto e $A \subset D$,
+texto_html = então $D$ é vizinhança de todos os pontos de $A$
+
+== 17:11.000 ==
+template = topico_2
+texto_html = ou seja,
 texto_html = $A \subset \mathring{D}$
 
-== 17:23.000 ==
+== 17:20.000 ==
+template = topico_3
+texto_html = resumindo...
+texto_html = $A \subset D \Rightarrow A \subset \mathring{D}$
+texto_html = pois $A$ é aberto
+
+== 18:10.000 ==
 template = topico_2
 texto_html = $D$ é vizinhança de um ponto $x$...
 texto_html = ... quando contém um aberto que contém $x$
 javascript = prepend_image('texto_2', 'attention');
-
-== 18:10.000 ==
-template = topico
-texto_html = não falei!? :-)
-javascript = prepend_image('texto', 'attention');
 
 == 20:25.000 ==
 template = topico

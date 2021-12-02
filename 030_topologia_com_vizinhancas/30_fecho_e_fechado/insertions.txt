@@ -1,0 +1,30 @@
+fecho_e_fechado.mlt
+
+== globals ==
+aula = Topologia com vizinhanças
+
+== 05.000 ==
+template = vinheta
+
+== 10.000 ==
+template = parte
+parte = O fecho de um conjunto
+
+== 03:10.000 ==
+template = parte
+parte = Conjuntos fechados
+
+== 04:48.000 ==
+template = topico
+texto_html = um conjunto que contém uma vizinhança...
+javascript = image_above('texto', 'doubt');
+
+== 07:27.000 ==
+template = parte
+parte = Revisão
+
+== 10:24.000 ==
+template = topico
+texto_html = até a próxima aula!
+javascript = image_above('texto', 'happy_robot');
+

@@ -11,6 +11,13 @@ javascript = image_above('texto', 'sleeping_computer_user');
 == 13.000 ==
 template = vinheta
 
+== 31.000 ==
+template = topico_3
+texto_html = dada a métrica $d: X \times X \rightarrow [0, \infty)$
+texto_html = $$\begin{align*}\tilde{d}: Y \times Y &\rightarrow [0, \infty) \\ (a,b) &\mapsto d(a,b)\end{align*}$$
+texto_html = é só a restrição de $d$ ao conjunto $Y \times Y$
+javascript = lower();
+
 == 59.000 ==
 template = parte
 parte = Métrica induzida
@@ -52,7 +59,8 @@ texto_html = que métrica colocar em $\mathbb{R}^{\mathbb{N}}$?
 
 == 14:20.000 ==
 template = topico
-texto_html = $[0,1]$ com a métrica usual (limitada)
+texto_html = $[0,1]$ com a métrica usual
+javascript = lower();
 
 == 14:33.000 ==
 template = topico
