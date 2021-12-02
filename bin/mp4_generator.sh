@@ -29,12 +29,12 @@ auto_filename="$(basename "$ORIGINAL_MLT_FILE" .mlt).mp4"
 OUTPUT_FILENAME="${2:-"$auto_filename"}"
 if [ -e "$OUTPUT_FILENAME" ]; then
   echo "File already exists!!! $OUTPUT_FILENAME"
-  exit -n "Overwrite? 'yes/no': "
+  echo -n "Overwrite? 'yes/no': "
   read ans
   if [ 'yes' != "$ans" ]; then
     echo "Aborting..."
     sleep 1 # So the user can read before next clip processing starts.
-    exit 1
+    exit 0
   fi
 fi
 
@@ -47,9 +47,11 @@ trap "rm -f '$TEMP_INPUT'" KILL
 
 MELT="melt-7"
 CRF=${CRF:-23}
+HEIGHT=${HEIGHT:-720}
+WIDTH="$(("$HEIGHT" * 16 / 9))"
 
 INSERT_STRING="$(cat <<EOF
-  <consumer deinterlace_method="yadif-nospatial" threads="0" vcodec="libx264" acodec="aac" ab="384k" ar="48000" g="300" rescale="bilinear" frame_rate_num="30000000" target="$OUTPUT_VIDEO_ABSPATH" preset="fast" mlt_service="avformat" crf="$CRF" bf="3" height="720" width="1280" movflags="+faststart" top_field_first="2" channels="2" frame_rate_den="1000000" real_time="-4" f="mp4"/>
+  <consumer deinterlace_method="yadif-nospatial" threads="0" vcodec="libx264" acodec="aac" ab="384k" ar="48000" g="300" rescale="bilinear" frame_rate_num="30000000" target="$OUTPUT_VIDEO_ABSPATH" preset="fast" mlt_service="avformat" crf="$CRF" bf="3" height="$HEIGHT" width="$WIDTH" movflags="+faststart" top_field_first="2" channels="2" frame_rate_den="1000000" real_time="-4" f="mp4"/>
 EOF
 )"
 
