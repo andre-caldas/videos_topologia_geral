@@ -1,3 +1,0 @@
-propriedades
-aberto_e_interior
-fecho_e_fechado

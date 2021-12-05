@@ -1,3 +1,0 @@
-construindo_filtros_base
-construindo_filtros_gerador
-usando_abertos

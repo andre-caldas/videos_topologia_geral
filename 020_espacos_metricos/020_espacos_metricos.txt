@@ -1,5 +1,0 @@
-37:32 a_topologia_dos_espacos_metricos
-aberto_e_interior
-fechado_e_fecho
-sequencias
-metrica_induzida
