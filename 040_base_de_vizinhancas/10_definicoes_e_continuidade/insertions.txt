@@ -1,0 +1,130 @@
+definicoes_e_continuidade.mlt
+
+== globals ==
+aula = Base de vizinhanças
+
+== 02.000 ==
+template = topico_2
+texto_html = 
+texto_html = 
+javascript = image_above('texto_1', 'wolverine'); image_above('texto_2', 'comb');
+
+== 10.000 ==
+template = vinheta
+
+== 29.000 ==
+template = parte
+parte = A família das bolas centradas em $x$: $\mathcal{B}(x)$
+
+== 02:20.000 ==
+template = topico_3
+texto_html = É o <emph>contrário</emph>!!!
+texto_html = Se vale para $\varepsilon = 1$...
+texto_html = ... automaticamente vale para $\varepsilon = 2$!
+javascript = prepend_image('texto_1', 'forbidden'); prepend_image('texto_3', 'attention');
+
+== 06:40.000 ==
+template = topico
+texto_html = Não pode escolher $B \not \in \mathcal{V}(x)$
+javascript = prepend_image('texto', 'forbidden');
+
+== 07:50.000 ==
+template = parte
+parte = Definição de base de vizinhanças
+
+== 08:27.000 ==
+template = topico
+texto_html = Não pode escolher $B \not \in \mathcal{V}(x)$
+javascript = prepend_image('texto', 'forbidden');
+
+== 10:32.000 ==
+template = topico
+texto_html = Não pode escolher $B \not \in \mathcal{V}(x)$
+javascript = prepend_image('texto', 'forbidden');
+
+== 11:03.000 ==
+template = topico
+texto_html = $$\begin{align*}\mathcal{B}_a &\subset \mathcal{V}(a) \\ &\phantom{\Updownarrow} \\ \phantom{\mathcal{V}(\mathcal{B}_a)} &\phantom{\subset \mathcal{V}(a)}\end{align*}$$
+
+== 11:05.000 ==
+template = topico
+texto_html = $$\begin{align*}\mathcal{B}_a &\subset \mathcal{V}(a) \\ &\Updownarrow \\ \phantom{\mathcal{V}(\mathcal{B}_a)} &\phantom{\subset \mathcal{V}(a)}\end{align*}$$
+
+== 11:07.000 ==
+template = topico
+texto_html = $$\begin{align*}\mathcal{B}_a &\subset \mathcal{V}(a) \\ &\Updownarrow \\ \mathcal{V}(\mathcal{B}_a) &\subset \mathcal{V}(a)\end{align*}$$
+
+== 12:07.000 ==
+template = topico
+texto_html = $\mathcal{V}(\mathcal{B}_a) = \mathcal{V}(a)$
+
+== 12:40.000 ==
+template = parte
+parte = Convergência com uma base de vizinhanças
+
+== 15:11.000 ==
+template = topico_2
+texto_html = nos espaços métricos...
+texto_html = ... contém uma bola centrada em $a$
+
+== 17:30.000 ==
+template = parte
+parte = Continuidade com uma base de vizinhanças
+
+== 21:19.000 ==
+template = topico
+texto_html = vamos ressucitar o $\varepsilon$!!!
+
+== 23:53.000 ==
+template = parte
+parte = Vizinhanças abertas
+
+== 24:29.000 ==
+template = topico
+texto_html = Argh!!!
+javascript = image_above('texto', 'nausea_monster');
+
+== 25:42.000 ==
+template = topico_2
+texto_html = $\mathring{\mathring{D}} = \mathring{D}$
+texto_html = $\Rightarrow$ $\mathring{D}$ é aberto
+javascript = lower();
+
+== 27:24.000 ==
+template = parte
+parte = Continuidade com abertos
+
+== 28:27.000 ==
+template = topico
+texto_html = só pros abertos
+
+== 29:05.000 ==
+template = topico_2
+texto_html = $f^{-1}(A)$ contém um aberto...
+texto_html = ... que contém o ponto $f(a)$
+
+== 31:12.000 ==
+template = topico_2
+texto_html = $a \in f^{-1}(A) \Rightarrow f^{-1}(A) \in \mathcal{V}(a)$
+texto_html = 
+javascript = lower(); image_above('texto_2', 'doubt');
+
+== 31:46.000 ==
+template = topico
+texto_html = um aberto!!!
+javascript = image_above('texto', 'science_girl');
+
+== 33:19.000 ==
+template = topico
+texto_html = $$\begin{align*}f^{-1}: \mathcal{P}(Y) &\rightarrow \mathcal{P}(X) \\ A &\mapsto f^{-1}(A)\end{align*}$$
+
+== 33:54.000 ==
+template = topico
+texto_html = troquei $X$ com $Y$ na hora de falar
+javascript = prepend_image('texto', 'papito');
+
+== 35:40.000 ==
+template = topico
+texto_html = intervalo!!!
+javascript = image_above('texto', 'fun');
+
