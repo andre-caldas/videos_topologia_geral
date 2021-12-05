@@ -14,21 +14,23 @@ parte = Operação de interior
 template = topico_3
 texto_html = para todo $x \in X$,
 texto_html = $X \in \mathcal{V}(x)$
-texto_html = ou seja, $X$ é vizinhança de todos (os seus) pontos
+texto_html = ou seja,<br/>$X$ é vizinhança de todos (os seus) pontos
 
 == 13:36.000 ==
 template = topico
 texto_html = 
-javascript = image_above('texto', 'mage');
+javascript = lower(); image_above('texto', 'mage');
 
 == 19:17.000 ==
 template = topico_2
 texto_html = e a diagonal diz que...
 texto_html = $\mathring{D}$ é vizinhança de todos os seus pontos!
 
-== 20:45.000 ==
-template = topico
-texto_html = $$\begin{align*} \mathrm{int}(A \cap B) &\subset \mathring{A} \\ \mathrm{int}(A \cap B) &\subset \mathring{B}$$
+== 20:54.000 ==
+template = topico_3
+texto_html = $\mathrm{int}(A \cap B) \subset \mathring{A}$
+texto_html = $\mathrm{int}(A \cap B) \subset \mathring{B}$
+texto_html = $\Rightarrow \mathrm{int}(A \cap B) \subset \mathring{A} \cap \mathring{B}$
 javascript = lower();
 
 == 22:30.000 ==
