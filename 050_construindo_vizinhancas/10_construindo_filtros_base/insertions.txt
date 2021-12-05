@@ -1,0 +1,56 @@
+construindo_filtros_base.mlt
+
+== globals ==
+aula = Construindo vizinhanças
+
+== 10.000 ==
+template = vinheta
+
+== 29.000 ==
+template = parte
+parte = Construindo filtros
+
+== 05:00.000 ===
+template = topico
+texto_html = estamos construindo um <emph>filtro</emph>
+javascript = append_image('texto', 'smart_girl');
+
+== 05:32.000 ===
+template = topico
+texto_html = você vai aprender a construir <emph>filtros</emph>
+javascript = prepend_image('texto', 'papito');
+
+== 06:05.000 ===
+template = topico_2
+texto_html = redes
+texto_html = filtros
+javascript = image_above('texto_1', 'net'); image_above('texto_2', 'water_cooler');
+
+== 13:42.000 ===
+template = topico_3
+texto_html = $V,W \in \mathcal{B}_x \Rightarrow V \cap W \in \mathcal{B}_x$
+texto_html = não é necessário...
+texto_html = ... mas é suficiente
+
+== 14:20.000 ==
+template = parte
+parte = Exemplo: uma base de vizinhanças
+
+== 15:52.000 ==
+template = topico
+texto_html = um professor patriota!
+javascript = lower(); image_above('texto', 'br_map_and_flag');
+
+== 19:54.000 ==
+template = parte
+parte = Famílias que geram o mesmo filtro
+
+== 22:24.000 ==
+template = topico
+texto_html = $\mathcal{C} \not \subset \mathcal{B}$
+
+== 23:20.000 ==
+template = topico
+texto_html = depois do intervalo tem mais
+javascript = append_image('texto', 'smiling_worm');
+

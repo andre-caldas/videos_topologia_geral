@@ -1,0 +1,34 @@
+construindo_filtros_gerador.mlt
+
+== globals ==
+aula = Construindo vizinhanças
+
+== 02.000 ==
+template = vinheta
+
+== 20.000 ==
+template = parte
+parte = O que fizemos até agora?
+
+== 07:52.000 ==
+template = parte
+parte = Uma família geradora
+
+== 10:08.000 ==
+template = topico
+texto_html = $$\bigcap_{\color{\red}{j=1}}^{\color{\red}{1}} A_j$$
+
+== 13:07.000 ===
+template = topico
+texto_html = filtro
+javascript = image_above('texto', 'water_cooler');
+
+== 16:18.000 ==
+template = parte
+parte = Exemplo: um filtro para o infinito
+
+== 18:20.000 ===
+template = topico
+texto_html = o item $5$... na próxima aula!
+javascript = image_above('texto', 'five');
+
