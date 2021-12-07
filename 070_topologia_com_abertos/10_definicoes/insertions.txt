@@ -1,0 +1,17 @@
+definicoes.mlt
+
+== globals ==
+aula = Topologia com abertos
+
+== 05.000 ==
+template = vinheta
+
+== 25.000 ==
+template = parte
+parte = Definição com abertos
+
+== 15:20.000 ==
+template = topico
+texto_html = intervalo!!!
+javascript = prepend_image('texto', 'math_girl'); append_image('texto', 'smiling_worm');
+

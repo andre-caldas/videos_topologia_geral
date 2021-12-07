@@ -1,0 +1,25 @@
+subespaco.mlt
+
+== globals ==
+aula = Topologia com abertos
+
+== 00.500 ==
+template = vinheta
+
+== 39.000 ==
+template = parte
+parte = Topologia induzida em um subespaço
+
+== 01:13.000 ==
+template = topico
+texto_html = os axiomas
+
+== 06:39.000 ==
+template = topico
+texto_html = $\mathrm{cl}_Y(D) = Y \cap \mathrm{cl}_X(D)$
+
+== 13:40.000 ==
+template = topico
+texto_html = intervalo!!!
+javascript = prepend_image('texto', 'math_girl'); append_image('texto', 'science_girl');
+

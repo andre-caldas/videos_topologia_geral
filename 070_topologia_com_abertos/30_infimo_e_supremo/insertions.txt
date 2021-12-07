@@ -1,0 +1,27 @@
+infimo_e_supremo.mlt
+
+== globals ==
+aula = Topologia com abertos
+
+== 09.000 ==
+template = vinheta
+
+== 01:01.000 ==
+template = parte
+parte = Ínfimo e supremo
+
+== 09:51.000 ==
+template = parte
+parte = Interseção de topologias
+
+== 10:43.000 ==
+template = topico_3
+texto_html = oops...
+texto_html = eu quis dizer união arbitrária
+texto_html = de abertos
+
+== 15:43.000 ==
+template = topico
+texto_html = até a próxima aula!!!
+javascript = image_above('texto', 'math_girl');
+
