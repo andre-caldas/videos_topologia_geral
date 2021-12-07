@@ -1,0 +1,86 @@
+gerador.mlt
+
+== globals ==
+aula = Construindo abertos
+
+== 00.000 ==
+template = vinheta
+
+== 01:55.000 ==
+template = parte
+parte = O último axioma e a arca perdida :-)
+
+== 03:54.000 ==
+template = topico_2
+texto_html = $\tau = \mathcal{P}(X)$
+texto_html = é a topologia discreta
+
+== 04:07.000 ==
+template = topico_2
+texto_html = queremos a menor topologia possível
+texto_html = que contenha $\mathcal{C}$
+
+== 04:32.500 ==
+template = topico
+texto_html = $\mathcal{C}_x \quad \phantom{\mathcal{B}_x \quad \mathcal{V}_x}$
+
+== 04:34.000 ==
+template = topico
+texto_html = $\mathcal{C}_x \quad \mathcal{B}_x \quad \phantom{\mathcal{V}_x}$
+
+== 04:38.000 ==
+template = topico
+texto_html = $\mathcal{C}_x \quad \mathcal{B}_x \quad \mathcal{V}_x$
+
+== 06:01.000 ==
+template = topico
+texto_html = esses serão vizinhanças de $x$
+
+== 07:41.000 ==
+template = topico_2
+texto_html = <emph>não cobre...</emph>
+texto_html = $X \not \subset \bigcup \mathcal{C}$
+
+== 07:50.000 ==
+template = topico_3
+texto_html = <emph>cobre...</emph>
+texto_html = $X \subset \bigcup \mathcal{C}$
+texto_html = no caso, igual
+
+== 09:22.000 ==
+template = topico
+texto_html = $\mathcal{C} \cup \{X\}$
+
+== 26:48.000 ==
+template = topico_2
+texto_html = se $A \in \mathcal{C}$,
+texto_html = então $\mathring{A} = A$
+
+== 26:52.000 ==
+template = topico
+texto_html = pois $x \in A \phantom{\Rightarrow A \in \mathcal{C}_x}$
+javascript = lower();
+
+== 26:54.000 ==
+template = topico
+texto_html = pois $x \in A \Rightarrow \phantom{A \in \mathcal{C}_x}$
+javascript = lower();
+
+== 26:55.000 ==
+template = topico
+texto_html = pois $x \in A \Rightarrow A \in \mathcal{C}_x$
+javascript = lower();
+
+== 27:46.000 ==
+template = parte
+parte = Uma base para a topologia
+
+== 28:02.000 ==
+template = topico
+texto_html = nem precisa tomar as interseções
+
+== 32:40.000 ===
+template = topico
+texto_html = intervalo!!!
+javascript = image_above('texto', 'fun');
+

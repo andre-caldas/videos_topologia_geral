@@ -1,0 +1,38 @@
+base.mlt
+
+== globals ==
+aula = Construindo abertos
+
+== 35.000 ==
+template = vinheta
+
+== 02:09.000 ==
+template = parte
+parte = Uma base para $\tau$
+
+== 03:35.000 ==
+template = topico
+texto_html = ao final teremos $\mathcal{B} \subset \tau$
+
+== 07:41.000 ==
+template = topico
+texto_html = $\tau(x)$ é base de $\mathcal{V}(x)$
+
+== 09:45.000 ==
+template = topico
+texto_html = como com as bolas
+
+== 10:33.000 ==
+template = topico_2
+texto_html = nos espaços métricos
+texto_html = os abertos são as união de bolas abertas
+
+== 11:30.000 ==
+template = parte
+parte = Juntando tudo: revisão
+
+== 12:47.000 ==
+template = topico
+texto_html = na próxima aula tem mais abertos
+javascript = image_above('texto', 'smiling_worm');
+
