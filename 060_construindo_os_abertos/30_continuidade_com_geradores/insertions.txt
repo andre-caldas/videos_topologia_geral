@@ -1,0 +1,26 @@
+continuidade_com_geradores.mlt
+
+== globals ==
+aula = Construindo abertos
+
+== 00.500 ==
+template = vinheta
+
+== 49.000 ==
+template = parte
+parte = Continuidade usando geradores
+
+== 02:37.500 ==
+template = topico
+texto_html = que vão em <emph>todos</emph>
+
+== 05:47.500 ==
+template = topico_2
+texto_html = se não,
+texto_html = ela não seria <emph>a</emph> menor
+
+== 06:13.000 ==
+template = topico
+texto_html = na próxima aula tem mais abertos!!
+javascript = image_above('texto', 'smiling_worm');
+

@@ -101,7 +101,7 @@ texto_html = só pros abertos
 == 29:05.000 ==
 template = topico_2
 texto_html = $f^{-1}(A)$ contém um aberto...
-texto_html = ... que contém o ponto $f(a)$
+texto_html = ... que contém o ponto $a$
 
 == 31:12.000 ==
 template = topico_2

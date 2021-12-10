@@ -33,6 +33,6 @@ parte = Juntando tudo: revisão
 
 == 12:47.000 ==
 template = topico
-texto_html = na próxima aula tem mais abertos
-javascript = image_above('texto', 'smiling_worm');
+texto_html = intervalo
+javascript = image_above('texto', 'fun');
 
