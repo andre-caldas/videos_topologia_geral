@@ -1,0 +1,20 @@
+grupos_topologicos.mlt
+
+== globals ==
+aula = Topologia quociente
+
+== 05.000 ==
+template = vinheta
+
+== 25.000 ==
+template = parte
+parte = Grupos topológicos
+
+== 01:13.000 ==
+template = topico
+texto_html = um elemento <span class="striked">neutro</span> identidade
+
+== 12:07.000 ==
+template = topico
+texto_html = da <span class="striked">origem</span> identidade
+

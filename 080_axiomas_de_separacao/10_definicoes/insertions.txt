@@ -1,0 +1,75 @@
+definicoes.mlt
+
+== globals ==
+aula = Axiomas de separação
+
+== 15.000 ==
+template = vinheta
+
+== 01:30.000 ==
+template = parte
+parte = Pontos indistinguíveis
+
+== 03:32.000 ==
+template = parte
+parte = Hierarquia dos axiomas
+
+== 07:33.000 ==
+template = topico
+texto_html = distintos
+
+== 10:58.000 ==
+template = topico
+texto_html = <span class="striked">nunca</span> nem sempre são vizinhanças de $b$
+
+== 11:30.000 ==
+template = topico_3
+texto_html = com abertos é mais fácil...
+texto_html = existe um aberto que contém $a$
+texto_html = e não contém $b$
+
+== 13:49.000 ==
+template = topico
+texto_html = um fechado
+javascript = image_above('texto', 'science_girl');
+
+== 14:22.000 ==
+template = topico_2
+texto_html = uma vizinhança de $a$
+texto_html = <emph>fechada!!!</emph>
+javascript = image_above('texto_1', 'science_girl'); prepend_image('texto_2', 'attention');
+
+== 18:37.000 ==
+template = topico
+texto_html = $\{p\}$ é fechado?
+javascript = image_above('texto', 'doubt');
+
+== 21:03.000 ==
+template = topico
+texto_html = que ele é <span class="striked">regular</span> $T_1$
+
+== 25:42.000 ==
+template = topico
+texto_html = fechada!!!
+javascript = prepend_image('texto', 'attention');
+
+== 26:47.000 ==
+template = topico_3
+texto_html = uma família $\mathscr{F}(a) \subset \mathcal{V}(a)$
+texto_html = todo $V \in \mathcal{V}(a)$...
+texto_html = ... contém algum elemento de $\mathscr{F}(a)$...
+javascript = image_above('texto_1', 'doubt');
+
+== 27:08.000 ==
+template = topico_3
+texto_html = um espaço normal, é parecido...
+texto_html = ao invés do ponto $a$,
+texto_html = temos um fechado
+javascript = prepend_image('texto_1', 'attention');
+
+== 27:34.000 ==
+template = topico_2
+texto_html = depois do intervalo...
+texto_html = Lema de Urysohn!!!
+javascript = image_above('texto_1', 'fun');
+

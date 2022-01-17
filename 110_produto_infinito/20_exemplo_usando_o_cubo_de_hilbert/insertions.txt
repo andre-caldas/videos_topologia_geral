@@ -1,0 +1,27 @@
+exemplo_usando_o_cubo_de_hilbert.mlt
+
+== globals ==
+aula = Produto de infinitos espaços topológicos
+
+== 05.000 ==
+template = vinheta
+
+== 28.000 ==
+template = parte
+parte = Usando o cubo de Hilbert
+
+== 07:36.000 ==
+template = topico_2
+texto_html = <span class="striked">$\mathrm{Im}(X)$</span> é na verdade
+texto_html = ... $\mathrm{Im}(\iota)$
+
+== 17:21.000 ==
+template = topico_2
+texto_html = ou seja,
+texto_html = será que $J^{-1}$ é contínua?
+
+== 19:07.000 ==
+template = topico
+texto_html = vai ser <span class="striked">contínua</span> injetiva
+javascript = prepend_image('texto', 'attention');
+

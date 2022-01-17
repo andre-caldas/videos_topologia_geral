@@ -1,0 +1,89 @@
+compacidade_sequencial.mlt
+
+== globals ==
+aula = Completude e compacidade sequencial
+
+== 01.000 ==
+template = vinheta
+
+== 30.000 ==
+template = parte
+parte = Compacidade sequencial
+
+== 37.000 ==
+template = topico_3
+texto_html = quando eu digo compacto...
+texto_html = ... eu quero dizer
+texto_html = <emph>sequencialmente</emph> compacto
+
+== 04:01.000 ==
+template = topico
+texto_html = <emph>sequencialmente</emph> compacto
+
+== 04:09.000 ==
+template = topico
+texto_html = <emph style="color: red;">sequencialmente</emph> compacto
+
+== 05:01.000 ==
+template = topico
+texto_html = <emph>sequencialmente!!!!</emph>
+
+== 06:44.000 ==
+template = parte
+parte = Professor bravo!!!
+
+== 10:59.000 ==
+template = topico
+texto_html = por uma aplicação <emph>contínua</emph>!!!
+javascript = prepend_image('texto', 'attention');
+
+== 12:49.000 ==
+template = topico
+texto_html = não é uma base (de Hamel)
+javascript = prepend_image('texto', 'attention');
+
+== 16:20.000 ==
+template = parte
+parte = Espaço métrico totalmente limitado
+
+== 19:16.000 ==
+template = topico
+texto_html = na <span class="striked">topologia</span> métrica induzida
+
+== 20:28.000 ==
+template = topico
+texto_html = pode ser e pode não ser
+javascript = prepend_image('texto', 'attention');
+
+== 23:57.000 ==
+template = topico
+texto_html = pode ser e pode não ser
+javascript = prepend_image('texto', 'math_girl');
+
+== 24:20.000 ==
+template = topico
+texto_html = podem ser e podem não ser
+javascript = prepend_image('texto', 'math_girl');
+
+== 34:55.000 ==
+template = topico
+texto_html = menor do que $2$
+
+== 41:45.000 ==
+template = topico_2
+texto_html = nada disso!!!
+texto_html = vamos continuar!
+javascript = prepend_image('texto_1', 'forbidden'); prepend_image('texto_2', 'attention');
+
+== 48:33.000 ==
+template = topico_2
+texto_html = com a proposição anterior...
+texto_html = ... ficava <emph>muito</emph> mais fácil
+javascript = prepend_image('texto_2', 'math_girl');
+
+== 51:00.000 ==
+template = topico_2
+texto_html = boas festas
+texto_html = feliz ano novo!!!
+javascript = image_above('texto_1', 'nausea_monster'); image_above('texto_2', 'happy_robot');
+

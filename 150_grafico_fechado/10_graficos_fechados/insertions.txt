@@ -1,0 +1,29 @@
+graficos_fechados.mlt
+
+== globals ==
+aula = Grafico fechado
+
+== 15.000 ==
+template = vinheta
+
+== 01:25.000 ==
+template = parte
+parte = Considerações sobre gráficos fechados
+
+== 05:46.000 ==
+template = topico
+texto_html = para espaços <span class="striked">métricos</span> topológicos em geral
+
+== 07:23.000 ==
+template = topico
+texto_html = <span class="striked">um ponto</span> uma sequência de pontos
+
+== 07:31.000 ==
+template = topico
+texto_html = <span class="striked">um ponto</span> uma sequência de pontos
+
+== 33:39.000 ==
+template = topico_2
+texto_html = pode pular essa proposição
+texto_html = e ir direto pro resumo no final
+

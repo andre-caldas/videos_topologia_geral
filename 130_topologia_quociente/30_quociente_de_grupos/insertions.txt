@@ -1,0 +1,46 @@
+quociente_de_grupos.mlt
+
+== globals ==
+aula = Topologia quociente
+
+== 05.000 ==
+template = vinheta
+
+== 02:59.000 ==
+template = parte
+parte = Quociente de grupos topológicos
+
+== 07:39.000 ==
+template = topico
+texto_html = partiu, particionamento!
+javascript = prepend_image('texto', 'rocket');
+
+== 11:12.000 ==
+template = topico_3
+texto_html = oops... $b^{-1}a \in H$
+texto_html = pois, multiplicando por $b$...
+texto_html = ... $a \in bH$
+javascript = prepend_image('texto_1', 'attention');
+
+== 14:35.000 ==
+template = topico
+texto_html = $B' = \pi(B)$
+
+== 15:05.000 ==
+template = topico
+texto_html = $\pi^{-1}(B') = \pi^{-1}(\pi(B))$
+
+== 16:58.000 ==
+template = topico
+texto_html = $B' = \pi(B)$
+
+== 17:58.000 ==
+template = topico
+texto_html = são os <span class="striked">conjuntos</span> elementos
+javascript = prepend_image('texto', 'attention');
+
+== 19:07.000 ==
+template = topico
+texto_html = pegamos um subgrupo $H$ qualquer
+javascript = prepend_image('texto', 'attention');
+

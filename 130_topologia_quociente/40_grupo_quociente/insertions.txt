@@ -1,0 +1,47 @@
+grupo_quociente.mlt
+
+== globals ==
+aula = Topologia quociente
+
+== 04.000 ==
+template = vinheta
+
+== 23.000 ==
+template = parte
+parte = Estrutura de grupo no quociente
+
+== 07:46.000 ==
+template = topico
+texto_html = a <emph>topologia final</emph> de $\pi \times \pi$!!!
+javascript = prepend_image('texto', 'attention');
+
+== 14:03.000 ==
+template = topico_3
+texto_html = não!!!
+texto_html = eles são uniões...
+texto_html = ... de conjuntos desse tipo
+javascript = prepend_image('texto_1', 'forbidden');
+
+== 14:58.000 ==
+template = topico_2
+texto_html = $\pi^{-1}(\pi(A)) = AN$
+texto_html = é aberto
+
+== 15:02.000 ==
+template = topico_2
+texto_html = então, $\pi(A)$
+texto_html = é aberto em $G/N$
+javascript = lower();
+
+== 15:52.000 ==
+template = topico_3
+texto_html = $f\left(\bigcup_{\lambda \in \Lambda} A_\lambda\right) = \bigcup_{\lambda \in \Lambda} f(A_\lambda)$
+texto_html = então, $f(\text{aberto})$
+texto_html = é união de abertos
+
+== 16:02.000 ==
+template = topico_3
+texto_html = pra saber se a aplicação é aberta
+texto_html = basta olhar em uma base
+texto_html = na <emph>topologia produto</emph>, nos retângulos!
+

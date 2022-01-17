@@ -1,0 +1,34 @@
+usando_diagramas.mlt
+
+== globals ==
+aula = Topologias inicial e final
+
+== 32.000 ==
+template = vinheta
+
+== 45.000 ==
+template = parte
+parte = Topologia inicial usando diagramas
+
+== 07:57.000 ==
+template = parte
+parte = Topologia final usando diagramas
+
+== 09:58.000 ==
+template = topico
+texto_html = é a <emph>maior</emph>!!!
+javascript = prepend_image('texto', 'attention');
+
+== 11:57.000 ==
+template = topico
+texto_html = pra qualquer $=$ pra todo!
+
+== 13:00.000 ==
+template = parte
+parte = Exemplo: trajetória de uma partícula
+
+== 15:38.000 ==
+template = topico
+texto_html = até a aula que vem!!!
+javascript = image_above('texto', 'happy_robot');
+

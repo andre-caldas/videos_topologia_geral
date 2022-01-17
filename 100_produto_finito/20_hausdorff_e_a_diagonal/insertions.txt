@@ -1,0 +1,12 @@
+hausdorff_e_a_diagonal.mlt
+
+== globals ==
+aula = Topologia produto
+
+== 00.500 ==
+template = vinheta
+
+== 15.000 ==
+template = parte
+parte = Espaços de Hausdorff e a diagonal
+

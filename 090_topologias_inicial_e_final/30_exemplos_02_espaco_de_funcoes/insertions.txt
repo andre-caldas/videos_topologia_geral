@@ -1,0 +1,24 @@
+exemplos_02_espaco_de_funcoes.mlt
+
+== globals ==
+aula = Topologias inicial e final
+
+== 32.000 ==
+template = vinheta
+
+== 45.000 ==
+template = parte
+parte = Convergência na topologia inicial
+
+== 01:44.000 ==
+template = topico
+texto_html = tem como <emph>gerador</emph>
+
+== 03:55.000 ==
+template = topico
+texto_html = gerada por uma família de <emph>funções</emph>
+
+== 04:47.000 ==
+template = parte
+parte = Exemplo: topologia em $C(\Omega)$
+

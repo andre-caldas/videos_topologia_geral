@@ -1,0 +1,36 @@
+produto_de_compactos.mlt
+
+== globals ==
+aula = Compacidade
+
+== 05.000 ==
+template = vinheta
+
+== 20.000 ==
+template = parte
+parte = Compacidade no produto
+
+== 05:15.000 ==
+template = parte
+parte = Usando uma sub-base
+
+== 21:47.000 ==
+template = topico_2
+texto_html = elementos da <span class="striked">base</span>
+texto_html = elementos da <emph>sub-base</emph>
+
+== 26:19.000 ==
+template = topico_2
+texto_html = elementos da <span class="striked">base</span>
+texto_html = elementos da <emph>sub-base</emph>
+
+== 36:12.000 ==
+template = topico_2
+texto_html = retirar <span class="striked">todos</span> os $C_j$
+texto_html = retirar <emph>a interseção</emph> dos $C_j$
+
+== 47:39.000 ==
+template = topico_2
+texto_html = <span class="striked">na base</span>
+texto_html = na cobertura maximal $\mathcal{F}_*$
+

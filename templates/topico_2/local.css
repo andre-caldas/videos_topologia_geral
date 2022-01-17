@@ -1,1 +1,56 @@
-../topico/local.css
+#container {
+  position: absolute;
+  right: 0;
+  margin-left: 40%;
+  min-width: 40%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.background {
+  display: inline;
+  right: 3%;
+  margin: 2em;
+  margin-bottom: 0;
+
+  background: var(--light-color);
+  border-width: 0;
+  border-style: none;
+  border-radius:70px 10px;
+
+  box-shadow: -10px 20px 2px 1px rgba(0, 0, 0, .3);
+}
+
+.foreground {
+  padding: 50px;
+  border-style: none;
+  border-width: 0;
+}
+
+.lower #container {
+  bottom: 0;
+}
+
+.lower .background {
+  margin: 2em;
+  margin-top: 0;
+}
+
+.overlap_1 .background {
+  margin-top: 40%;
+}
+
+.lower.overlap_1 .background {
+  margin-bottom: 40%;
+}
+
+.overlap_2 .background {
+  margin-top: 60%;
+}
+
+.lower.overlap_2 .background {
+  margin-bottom: 60%;
+}
+

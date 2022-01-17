@@ -1,0 +1,70 @@
+lema_de_urysohn.mlt
+
+== globals ==
+aula = Axiomas de separação
+
+== 01.000 ==
+template = vinheta
+
+== 12.000 ==
+template = parte
+parte = Lema de Urysohn
+
+== 05:51.000 ==
+template = topico_2
+texto_html = na topologia de $[0,1]$...
+texto_html = $[0,\varepsilon)$ é aberto
+javascript = append_image('texto_1', 'smart_girl');
+
+== 08:58.000 ==
+template = topico_3
+texto_html = perceba como a situação se repete!
+texto_html = o azul está dentro do verde pontilhado
+texto_html = e o verde está dentro do vermelho pontilhado
+javascript = append_image('texto_1', 'smart_girl');
+
+== 11:52.000 ==
+template = topico
+texto_html = 
+javascript = image_above('texto', 'onion');
+
+== 13:40.000 ==
+template = topico_3
+texto_html = $\mathbb{Q} \cap [0,1]$ se divide em duas partes
+texto_html = $q < f(x)$...
+texto_html = ... quando $x \not \in F_q$
+
+== 13:52.000 ==
+template = topico_2
+texto_html = $q \geq f(x)$...
+texto_html = ... quando $x \in F_q$
+
+== 15:51.000 ==
+template = topico
+texto_html = $a < f(x)$
+
+== 17:00.000 ==
+template = topico_3
+texto_html = tem algum racional $q$...
+texto_html = ... tal que $f(x) > q > a$
+texto_html = $x \not \in F_q$
+
+== 21:07.000 ==
+template = topico
+texto_html = $\mathbb{Q} \cap (0,1) = \{q_1, q_2, \dotsc \}$
+
+== 21:57.000 ==
+template = topico
+texto_html = Dos intervalos <emph>abertos</emph>!
+javascript = prepend_image('texto', 'attention');
+
+== 22:24.000 ==
+template = topico_2
+texto_html = imagem inversa de aberto do conjunto gerador...
+texto_html = ... é um aberto <span class="striked">do conjunto gerador</span>
+
+== 22:30.000 ==
+template = topico
+texto_html = até a próxima aula!
+javascript = lower(); image_above('texto', 'fun');
+

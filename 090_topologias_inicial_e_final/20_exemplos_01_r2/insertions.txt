@@ -1,0 +1,20 @@
+exemplos_01_r2.mlt
+
+== globals ==
+aula = Topologias inicial e final
+
+== 03.000 ==
+template = parte
+parte = Exemplo com uma função
+
+== 16.500 ==
+template = vinheta
+
+== 03:22.000 ==
+template = parte
+parte = Exemplo com duas funções
+
+== 05:32.000 ==
+template = parte
+parte = Exemplo com uma família de funções
+

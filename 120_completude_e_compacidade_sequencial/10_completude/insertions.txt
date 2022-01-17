@@ -1,0 +1,35 @@
+completude.mlt
+
+== globals ==
+aula = Completude e compacidade sequencial
+
+== 30.000 ==
+template = vinheta
+
+== 01:45.000 ==
+template = parte
+parte = Sequência de Cauchy
+
+== 26:05.000 ==
+template = topico_3
+texto_html = se $|f_n(x) - f(x)| < \varepsilon$
+texto_html = para todo $x$, então
+texto_html = $\|f_n - f\| \leq \varepsilon$
+
+== 26:16.000 ==
+template = topico
+texto_html = menor <emph>ou igual</emph>
+
+== 33:17.000 ==
+template = topico
+texto_html = menor <emph>ou igual</emph>
+
+== 42:14.000 ==
+template = topico
+texto_html = vão ter <span class="striked">funções</span> sequências
+
+== 57:53.000 ==
+template = topico
+texto_html = $x_{n_k}$ até $a$
+javascript = prepend_image('texto', 'math_girl');
+

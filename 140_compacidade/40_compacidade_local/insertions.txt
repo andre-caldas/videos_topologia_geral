@@ -1,0 +1,38 @@
+compacidade_local.mlt
+
+== globals ==
+aula = Compacidade
+
+== 09.000 ==
+template = vinheta
+
+== 35.000 ==
+template = parte
+parte = Compacidade local
+
+== 02:52.000 ==
+template = topico
+texto_html = das vizinhanças <span class="striked">fechadas</span> compactas
+
+== 03:01.000 ==
+template = topico
+texto_html = que são <span class="striked">fechadas</span> compactas
+
+== 03:09.000 ==
+template = topico_2
+texto_html = caramba!!!
+texto_html = o sujeito não para de falar fechadas ao invés de <emph>compactas</emph>!!!
+javascript = prepend_image( 'texto_1', 'forbidden'); append_image( 'texto_1', 'forbidden'); prepend_image( 'texto_2', 'attention');
+
+== 18:23.000 ==
+template = topico
+texto_html = tenha uma vizinhança <span class="striked">fechada</span> compacta
+
+== 20:15.000 ==
+template = topico
+texto_html = é um jeito de dizer que é <emph>regular</emph>
+
+== 27:25.000 ==
+template = parte
+parte = Compactificação por um ponto
+

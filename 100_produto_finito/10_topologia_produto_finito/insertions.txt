@@ -1,0 +1,68 @@
+topologia_produto_finito.mlt
+
+== globals ==
+aula = Topologia produto
+
+== 04.000 ==
+template = vinheta
+
+== 45.000 ==
+template = parte
+parte = Produto de finitos espaços topológicos
+
+== 10:10.000 ==
+template = parte
+parte = Continuidade em cada coordenada
+
+== 13:18.000 ==
+template = topico
+texto_html = Coordenada a coordenada
+javascript = image_above('texto', 'science_girl');
+
+== 17:17.000 ==
+template = parte
+parte = Homeomorfismo sobre a imagem: inclusão
+
+== 17:45.000 ==
+template = topico
+texto_html = $X \not \subset X \times Y$
+
+== 19:11.500 ==
+template = topico
+texto_html = contínua... topologia produto...
+javascript = lower(); image_above('texto', 'doubt');
+
+== 19:17.000 ==
+template = topico
+texto_html = por que é contínua em cada coordenada!
+javascript = image_above('texto', 'math_girl');
+
+== 20:03.500 ==
+template = topico
+texto_html = topologia num subconjunto...
+javascript = lower(); image_above('texto', 'doubt');
+
+== 20:07.000 ==
+template = topico
+texto_html = pegue as interseções!!!
+javascript = image_above('texto', 'science_girl');
+
+== 21:54.000 ==
+template = topico
+texto_html = é contínua!!!
+javascript = image_above('texto', 'math_girl');
+
+== 23:42.000 ==
+template = parte
+parte = Operação de soma em $\mathbb{R}$
+
+== 25:56.000 ==
+template = topico
+texto_html = 
+javascript = image_above('texto', 'br_flag');
+
+== 36:22.000 ==
+template = topico
+texto_html = ufa!!!
+javascript = image_above('texto', 'papito');
+

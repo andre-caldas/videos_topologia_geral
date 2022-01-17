@@ -1,0 +1,18 @@
+espaco_vetorial_topologico.mlt
+
+== globals ==
+aula = Topologia produto
+
+== 01:08.000 ==
+template = vinheta
+
+== 01:21.000 ==
+template = parte
+parte = Espaços vetoriais topológicos
+
+== 14:16.000 ==
+template = topico_2
+texto_html = se $a \not \in b + W$...
+texto_html = ... então, $b \not \in a - W$
+javascript = prepend_image('texto_1', 'attention');
+

@@ -1,0 +1,35 @@
+hausdorff_e_compacidade.mlt
+
+== globals ==
+aula = Compacidade
+
+== 30.000 ==
+template = vinheta
+
+== 02:13.000 ==
+template = parte
+parte = Compacidade e a propriedade de Hausdorff
+
+== 26:48.000 ==
+template = topico_2
+texto_html = por que ele <span class="striked">é aberto</span>
+texto_html = por que ele <emph>não é fechado</emph>
+
+== 26:55.000 ==
+template = topico_3
+texto_html = tá falando bobagem!
+texto_html = não há problema em ser aberto
+texto_html = o problema é <emph>não ser fechado</emph>!
+javascript = lower(); prepend_image('texto_1', 'forbidden');
+
+== 41:00.000 ==
+template = topico_2
+texto_html = a rigor, não são vizinhanças do $1$ ou do $-1$...
+texto_html = ... porque $-1, 1 \not \in (-1,1)$
+
+== 41:11.000 ==
+template = topico_2
+texto_html = não vou fazer, não...
+texto_html = ... ficou muito difícil
+javascript = append_image('texto_1', 'papito'); prepend_image('texto_2', 'papito');
+

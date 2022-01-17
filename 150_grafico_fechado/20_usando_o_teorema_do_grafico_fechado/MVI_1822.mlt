@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<mlt LC_NUMERIC="C.UTF-8" version="7.2.0" title="MVI_1519.MP4">
+<mlt LC_NUMERIC="C.UTF-8" version="7.4.0" title="MVI_1822.MP4">
   <profile description="HD 1080p 60 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
-  <producer id="producer0" in="309" out="3799">
-    <property name="length">3800</property>
+  <producer id="producer0" in="114" out="11923">
+    <property name="length">11924</property>
     <property name="eof">pause</property>
-    <property name="resource">MVI_1519.MP4</property>
+    <property name="resource">MVI_1822.MP4</property>
     <property name="meta.media.nb_streams">2</property>
     <property name="meta.media.0.stream.type">video</property>
     <property name="meta.media.0.stream.frame_rate">29.97</property>
@@ -18,8 +18,8 @@
     <property name="meta.media.0.codec.color_trc">1</property>
     <property name="meta.media.0.codec.name">h264</property>
     <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">30733245</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2021-11-17T14:03:09.000000Z</property>
+    <property name="meta.media.0.codec.bit_rate">30897872</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2022-01-09T19:02:07.000000Z</property>
     <property name="meta.attr.0.stream.language.markup">eng</property>
     <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
     <property name="meta.media.1.stream.type">audio</property>
@@ -29,13 +29,13 @@
     <property name="meta.media.1.codec.name">aac</property>
     <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
     <property name="meta.media.1.codec.bit_rate">128000</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2021-11-17T14:03:09.000000Z</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2022-01-09T19:02:07.000000Z</property>
     <property name="meta.attr.1.stream.language.markup">eng</property>
     <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
     <property name="meta.attr.major_brand.markup">mp42</property>
     <property name="meta.attr.minor_version.markup">1</property>
     <property name="meta.attr.compatible_brands.markup">mp42avc1CAEP</property>
-    <property name="meta.attr.creation_time.markup">2021-11-17T14:03:09.000000Z</property>
+    <property name="meta.attr.creation_time.markup">2022-01-09T19:02:07.000000Z</property>
     <property name="seekable">1</property>
     <property name="meta.media.sample_aspect_num">1</property>
     <property name="meta.media.sample_aspect_den">1</property>
@@ -46,12 +46,12 @@
     <property name="mlt_service">avformat</property>
   </producer>
   <playlist id="playlist0">
-    <entry producer="producer0" in="0" out="3490"/>
+    <entry producer="producer0" in="0" out="11809"/>
   </playlist>
-  <producer id="producer1" in="0" out="3738">
-    <property name="length">3739</property>
+  <producer id="producer1" in="0" out="12068">
+    <property name="length">12069</property>
     <property name="eof">pause</property>
-    <property name="resource">0.99950568:MVI_1519_48000.WAV</property>
+    <property name="resource">0.99947622:MVI_1822_48000.WAV</property>
     <property name="aspect_ratio">1</property>
     <property name="meta.media.nb_streams">1</property>
     <property name="meta.media.0.stream.type">audio</property>
@@ -66,14 +66,14 @@
     <property name="audio_index">0</property>
     <property name="video_index">-1</property>
     <property name="mute_on_pause">1</property>
-    <property name="warp_speed">0.999506</property>
-    <property name="warp_resource">MVI_1519_48000.WAV</property>
+    <property name="warp_speed">0.999476</property>
+    <property name="warp_resource">MVI_1822_48000.WAV</property>
     <property name="mlt_service">timewarp</property>
   </producer>
   <playlist id="playlist1">
-    <entry producer="producer1" in="0" out="3738"/>
+    <entry producer="producer1" in="0" out="12068"/>
   </playlist>
-  <tractor id="tractor0" title="MVI_1519.MP4" in="0" out="3738">
+  <tractor id="tractor0" title="MVI_1822.MP4" in="0" out="12068">
     <track producer="playlist0" hide="audio"/>
     <track producer="playlist1" hide="video"/>
   </tractor>

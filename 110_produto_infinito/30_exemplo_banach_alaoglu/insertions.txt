@@ -1,0 +1,68 @@
+exemplo_banach_alaoglu.mlt
+
+== globals ==
+aula = Produto de infinitos espaços topológicos
+
+== 05.000 ==
+template = vinheta
+
+== 30.000 ==
+template = parte
+parte = A <emph>essência</emph> do famoso teorema de Banach-Alaoglu
+
+== 01:50.000 ==
+template = topico_2
+texto_html = $\mathbb{R}^E$ são as funções de $E$ em $\mathbb{R}$
+texto_html = e, $E^*$ <emph>são</emph> funções de $E$ em $\mathbb{R}$
+
+== 02:07.000 ==
+template = topico_2
+texto_html = ou seja,
+texto_html = é a <emph>topologia produto</emph>!
+
+== 03:17.000 ==
+template = topico
+texto_html = $J$ é injetiva
+
+== 04:41.000 ==
+template = topico_2
+texto_html = claro que elas são contínuas...
+texto_html = ... na topologia produto
+
+== 04:48.000 ==
+template = topico_3
+texto_html = o que estou dizendo é que elas <emph>também</emph> são contínuas...
+texto_html = ... na topologia da tal norma de operadores
+texto_html = mas não vamos mostrar <emph>nem utilizar</emph> isso
+javascript = lower();
+
+== 05:12.000 ==
+template = topico_3
+texto_html = não se preocupe com a topologia da norma!
+texto_html = não vamos utilizar...
+texto_html = nem deveria ter mencionado!
+
+== 09:37.000 ==
+template = topico_2
+texto_html = com notação de função...
+texto_html = $f(a) = \|a\|\,f|_S\left(\frac{a}{\|a\|}\right)$
+
+== 10:40.000 ==
+template = topico_3
+texto_html = calcular no ponto é a projeção
+texto_html = $$\begin{align*}\pi_{\frac{a}{\|a\|}}: \mathbb{R}^S &\rightarrow \mathbb{R} \\ f &\mapsto f\left(\frac{a}{\|a\|}\right)\end{align*}$$
+texto_html = ... que é contínua
+javascript = append_image('texto_3', 'attention');
+
+== 15:56.000 ==
+template = topico_3
+texto_html = $\mathbb{R}^E$ induz em $E^*$
+texto_html = a mesma topologia que
+texto_html = $\mathbb{R}^S$ induz em $E^*$
+
+== 16:45.000 ==
+template = topico_2
+texto_html = seria melhor escrever
+texto_html = $f(S) \subset [-1,1]$
+javascript = lower();
+

@@ -1,0 +1,43 @@
+definicao_produto.mlt
+
+== globals ==
+aula = Produto de infinitos espaços topológicos
+
+== 08.000 ==
+template = vinheta
+
+== 32.000 ==
+template = parte
+parte = Produto de infinitos conjuntos
+
+== 09:00.000 ==
+template = parte
+parte = Considerações / motivação
+
+== 12:18.000 ==
+template = topico
+texto_html = funciona para espaços <span class="striked">topológicos</span> métricos.
+
+== 20:10.000 ==
+template = topico
+texto_html = HORRÍVEL!!!
+javascript = image_above('texto', 'nausea_monster');
+
+== 21:41.000 ==
+template = topico_2
+texto_html = HORRÍVEL, também!!!
+texto_html = se der, é melhor ficar com a sub-base
+javascript = image_above('texto_1', 'nausea_monster'); append_image('texto_2', 'smart_girl');
+
+== 27:04.000 ==
+template = parte
+parte = Exemplo: nem sempre a topologia produto é boa
+
+== 35:10.000 ==
+template = parte
+parte = Resumo
+
+== 37:52.000 ==
+template = parte
+parte = Exemplo: cubo de Hilbert
+

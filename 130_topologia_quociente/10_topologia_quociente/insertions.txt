@@ -1,0 +1,31 @@
+topologia_quociente.mlt
+
+== globals ==
+aula = Topologia quociente
+
+== 10.000 ==
+template = vinheta
+
+== 24.000 ==
+template = parte
+parte = Exemplos e motivação
+
+== 18:40.000 ==
+template = topico
+texto_html = M.C. Escher
+javascript = image_above('texto', 'escher_triangle');
+
+== 27:08.000 ==
+template = topico_2
+texto_html = Volte aqui quando aprendermos...
+texto_html = ... rigidez compacto-Hausdorff.
+javascript = append_image('texto_1', 'papito'); prepend_image('texto_2', 'papito');
+
+== 27:24.000 ==
+template = parte
+parte = Quociente de grupos
+
+== 34:28.000 ==
+template = parte
+parte = Topologia quociente com diagramas
+

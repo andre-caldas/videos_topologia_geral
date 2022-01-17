@@ -1,0 +1,46 @@
+usando_o_teorema_do_grafico_fechado.mlt
+
+== globals ==
+aula = Grafico fechado
+
+== 07.000 ==
+template = vinheta
+
+== 21.000 ==
+template = parte
+parte = <emph>Usando</emph> o teorema do gráfico fechado
+
+== 02:21.000 ==
+template = topico_2
+texto_html = primeiro...
+texto_html = ... uma aplicação <emph>extremamente simples</emph>
+
+== 05:50.000 ==
+template = parte
+parte = Continuidade fraco-fraco e continuidade forte-forte
+
+== 10:06.000 ==
+template = topico
+texto_html = não é bobinha, não!
+javascript = prepend_image('texto', 'math_girl');
+
+== 12:00.000 ==
+template = topico_3
+texto_html = não se preocupe com isso, agora!
+texto_html = mas a resposta vem de...
+texto_html = ... $f \in F^* \Rightarrow f \circ T \in E^*$
+
+== 16:16.000 ==
+template = parte
+parte = Preparação para o <emph>princípio da limitação uniforme</emph>
+
+== 19:38.000 ==
+template = parte
+parte = Princípio da limitação uniforme
+
+== 31:54.000 ==
+template = topico_2
+texto_html = correção...
+texto_html = ... quando $\Lambda$ é finito
+javascript = prepend_image('texto_1', 'math_girl');
+

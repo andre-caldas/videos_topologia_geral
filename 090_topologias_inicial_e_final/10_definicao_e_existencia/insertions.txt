@@ -1,0 +1,37 @@
+definicao_e_existencia.mlt
+
+== globals ==
+aula = Topologias inicial e final
+
+== 12.000 ==
+template = vinheta
+
+== 01:13.000 ==
+template = parte
+parte = Topologia <emph>inicial</emph> para uma função
+
+== 02:52.000 ==
+template = parte
+parte = Topologia <emph>final</emph> para uma função
+
+== 06:34.000 ==
+template = parte
+parte = Topologia <emph>inicial</emph> para uma família de funções
+
+== 08:29.000 ==
+template = topico
+texto_html = onde <emph>TODAS</emph> as $f_\lambda$ são contínuas
+
+== 08:49.500 ==
+template = topico
+texto_html = $\mathcal{C} = \{f_\lambda^{-1}(A) |\, \lambda \in \Lambda,\, A \in \tau_\lambda\}$.
+
+== 11:59.000 ==
+template = parte
+parte = Topologia <emph>final</emph> para uma família de funções
+
+== 13:49.500 ==
+template = topico
+texto_html = Kkkkk... só depois do intervalo!
+javascript = image_above('texto', 'forbidden');
+
